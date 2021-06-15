@@ -1,0 +1,74 @@
+{
+    "name": "bootstrap5snippets",
+    "displayName": "Bootstrap5-Snippets",
+    "description": "One Extension for all Bootstrap5 snippets",
+    "version": "1.0.0",
+    "publisher": "Nishikanta12",
+    "engines": {
+        "vscode": "^1.57.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/NishikantaRay/Vs-code-extension-for-Bootstrap5"
+      },
+    "icon": "icon.png",
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/nav.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/Accordian.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/Breadcrumb.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/Button.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/Cards.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/Carousel.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/figur.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/forms.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/grid.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/modal.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/pagination.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/template.code-snippets"
+            }
+        ]
+    }
+}

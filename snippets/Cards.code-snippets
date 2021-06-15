@@ -1,0 +1,17 @@
+{
+    "Bootstrap 5 Card": {
+        "prefix": "!bs5-card",
+        "body": [
+            "<div class=\"card\" style=\"width:${1|18rem;, |}\">",
+            "  <img src=\"#\" class=\"card-img-top\" alt=\"...\">",
+            "  <div class=\"card-body\">",
+            "    <h5 class=\"card-title\">${2|Card title, |}</h5>",
+            "    <h6 class=\"card-subtitle ${3|mb-2 text-muted, |} \">${4|Card subtitle, |}</h6>",
+            "    <p class=\"card-text\">${5|Some quick example text to build on the card title and make up the bulk of the card's content., |}</p>",
+            "    b5${0}",
+            "  </div>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 Card"
+    }
+}

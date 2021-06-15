@@ -1,0 +1,34 @@
+{
+    "Bootstrap5 Button": {
+        "prefix": "!bs5-btn",
+        "body": [
+            "<a class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark|} btn-${2|sm,lg|} \" href=\"${3|#, |}\" role=\"button\">${4| ,Link|}</a>"
+        ],
+        "description": "Create a basic button."
+    },
+    "Bootstrap5 Button-Outline": {
+        "prefix": "!bs5-btn-outline",
+        "body": [
+            "<a class=\"btn btn-outline-${2|primary,secondary,success,danger,warning,info,light,dark|}\" href=\"${3|#, |}\" role=\"button\">${4| ,Link|}</a>"
+        ],
+        "description": "Link BTN"
+    },
+    "Bootstrap5 Close Button": {
+        "prefix": "!bs5-btn-close",
+        "body": [
+            "<button type=\"button\" class=\"close\" ${1| ,disabled|} aria-label=\"Close\">",
+            "  <span aria-hidden=\"true\">&times;</span>",
+            "</button>"
+        ],
+        "description": "Close Button"
+    },
+    "Bootstrap5 Button Group": {
+        "prefix": "!bs5-btn-gp",
+        "body": [
+            "<div class=\"btn-group ${2| ,btn-group-vertical,btn-group-sm,btn-group-lg,h1|} ${3|!spacing,!color,!font,!shadow|}\" role=\"group\" aria-label=\"${1:Basic example}\">",
+            "    b5-btn${0}",
+            "</div>"
+        ],
+        "description": "Button Group"
+    }
+}
