@@ -14,9 +14,9 @@ The first, (currently only) and hands down BEST bootstrap 5 snippet extension. I
  - Modals
  - Navbars
 
-<!--
- ![](Templates2.gif) 
--->
+
+ ![](demo.gif) 
+
 
 ## Powerful, Simple, ***Flex*** Snippets
 > **Center, position or reorder any element, by any default breakpoint with under 10 snippets.**
@@ -83,6 +83,37 @@ Trigger | Description
 --- | ---
 bs5-**btn-reveal** | Click a button and reveal some content.
 
+# Snippets
+Trigger | Description
+--- | ---
+!form-blank |
+!form-fullname |
+!form-middlename |
+!form-last-name |
+!form-email |
+!form-phone |
+!form-street-address |
+!form-street-1 |
+!form-street-2 |
+!form-street-3 |
+!form-city |
+!form-state |
+!form-country |
+!form-county |
+!form-id |
+!form-major |
+!form-gpa |
+!form-signature |
+!form-date |
+!form-time |
+!form-select |
+!form-file-upload |
+!form-amount |
+!form-radio-button |
+!form-checkbox |
+
 ## Releases :
 
 ### 1.0.0 - Initial release
+
+### 1.0.1 - Added 30+ form group snippets

@@ -68,6 +68,10 @@
             {
                 "language": "html",
                 "path": "./snippets/template.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/formgroup.code-snippets"
             }
         ]
     }

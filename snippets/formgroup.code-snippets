@@ -1,0 +1,295 @@
+{
+	"Bootstrap 5: Blank Form Group": {
+		"prefix": "!form-blank",
+		"body": [
+			"<div class=\"mb-3\">",
+			"    <label id=\"$1_label\" for=\"$1\">${2}</label>",
+			"    <input id=\"$1\" name=\"$1\" type=\"text\" class=\"form-control\" />",
+			"</div>"
+		],
+		"description": "Blank Form Group"
+	},
+	"Bootstrap 5: Full Name Form Group": {
+		"prefix": "!form-fullname",
+		"body": [
+			"<div class=\"mb-3\">",
+			"    <label id=\"full_name_label\" for=\"full_name\">Full Name</label>",
+			"    <input id=\"full_name\" name=\"full_name\" type=\"text\" class=\"form-control\" />",
+			"</div>"
+		],
+		"description": "Full Name Form Group"
+	},
+	"Bootstrap 5: First Name Form Group": {
+		"prefix": "!form-Firstname",
+		"body": [
+			"<div class=\"mb-3\">",
+			"    <label id=\"first_name_label\" for=\"first_name\">First Name</label>",
+			"    <input id=\"first_name\" name=\"first_name\" type=\"text\" class=\"form-control\" />",
+			"</div>"
+		],
+		"description": "First Name Form Group"
+	},
+	"Bootstrap 5: Middle Form Group": {
+		"prefix": "!form-middlename",
+		"body": [
+			"<div class=\"mb-3\">",
+			"    <label id=\"middle_name_label\" for=\"middle_name\">Middle Name</label>",
+			"    <input id=\"middle_name\" name=\"middle_name\" type=\"text\" class=\"form-control\" />",
+			"</div>"
+		],
+		"description": "Middle Name Form Group"
+	},
+	"Bootstrap 5: Last Name Form Group": {
+		"prefix": "!form-last-name",
+		"body": [
+			"<div class=\"mb-3\">",
+			"    <label id=\"last_name_label\" for=\"last_name\">Last Name</label>",
+			"    <input id=\"last_name\" name=\"last_name\" type=\"text\" class=\"form-control\" />",
+			"</div>"
+		],
+		"description": "Last Name Form Group"
+	},
+	"Bootstrap 5: Email Form Group": {
+		"prefix": "!form-email",
+		"body": [
+			"<div class=\"mb-3\">",
+			"    <label id=\"email_label\" for=\"email\">Email Address</label>",
+			"    <input id=\"email\" name=\"email\" type=\"email\" class=\"form-control\" />",
+			"</div>"
+		],
+		"description": "Email Form Group"
+	},
+	"Bootstrap 5: Password Form Group": {
+		"prefix": "!form-password",
+		"body": [
+			"<div class=\"mb-3\">",
+			"    <label id=\"password_label\" for=\"password\">Password</label>",
+			"    <input id=\"password\" name=\"password\" type=\"password\" class=\"form-control\" />",
+			"</div>"
+		],
+		"description": "Email Form Group"
+	},
+	"Bootstrap 5: Phone Form Group": {
+		"prefix": "!form-phone",
+		"body": [
+			"<div class=\"mb-3\">",
+			"    <label id=\"phone_label\" for=\"phone\">Phone Number</label>",
+			"    <input id=\"phone\" name=\"phone\" type=\"tel\" class=\"form-control\" />",
+			"</div>"
+		],
+		"description": "Phone Number Form Group"
+	},
+	"Bootstrap 5: Street Address Form Group": {
+		"prefix": "!form-street-address",
+		"body": [
+			"<div class=\"mb-3\">",
+			"    <label id=\"street_address_label\" for=\"street_address\">Street Address</label>",
+			"    <input id=\"street_address\" name=\"street_address\" type=\"text\" class=\"form-control\" />",
+			"</div>"
+		],
+		"description": "Street Address Form Group"
+	},
+	"Bootstrap 5: Street 1 Form Group": {
+		"prefix": "!form-street-1",
+		"body": [
+			"<div class=\"mb-3\">",
+			"    <label id=\"street_1_label\" for=\"street_1\">Street 1</label>",
+			"    <input id=\"street_1\" name=\"street_1\" type=\"text\" class=\"form-control\" />",
+			"</div>"
+		],
+		"description": "Street 1 Form Group"
+	},
+	"Bootstrap 5: Street 2 Form Group": {
+		"prefix": "!form-street-2",
+		"body": [
+			"<div class=\"mb-3\">",
+			"    <label id=\"street_2_label\" for=\"street_2\">Street 2</label>",
+			"    <input id=\"street_2\" name=\"street_2\" type=\"text\" class=\"form-control\" />",
+			"</div>"
+		],
+		"description": "Street 2 Form Group"
+	},
+	"Bootstrap 5: Street 3 Form Group": {
+		"prefix": "!form-street-3",
+		"body": [
+			"<div class=\"mb-3\">",
+			"    <label id=\"street_3_label\" for=\"street_3\">Street 3</label>",
+			"    <input id=\"street_3\" name=\"street_3\" type=\"text\" class=\"form-control\" />",
+			"</div>"
+		],
+		"description": "Street 3 Form Group"
+	},
+	"Bootstrap 5: City Form Group": {
+		"prefix": "!form-city",
+		"body": [
+			"<div class=\"mb-3\">",
+			"    <label id=\"city_label\" for=\"city\">City</label>",
+			"    <input id=\"city\" name=\"city\" type=\"text\" class=\"form-control\" />",
+			"</div>"
+		],
+		"description": "City Form Group"
+	},
+	"Bootstrap 5: State Form Group": {
+		"prefix": "!form-state",
+		"body": [
+			"<div class=\"mb-3\">",
+			"    <label id=\"state_label\" for=\"state\">State/Province</label>",
+			"    <input id=\"state\" name=\"state\" type=\"text\" class=\"form-control\" />",
+			"</div>"
+		],
+		"description": "State Form Group"
+	},
+	"Bootstrap 5: Country Form Group": {
+		"prefix": "!form-country",
+		"body": [
+			"<div class=\"mb-3\">",
+			"    <label id=\"country_label\" for=\"country\">Country</label>",
+			"    <input id=\"country\" name=\"country\" type=\"text\" class=\"form-control\" />",
+			"</div>"
+		],
+		"description": "Country Form Field"
+	},
+	"Bootstrap 5: County Form Group": {
+		"prefix": "!form-county",
+		"body": [
+			"<div class=\"mb-3\">",
+			"    <label id=\"county_label\" for=\"county\">County</label>",
+			"    <input id=\"county\" name=\"county\" type=\"text\" class=\"form-control\" />",
+			"</div>"
+		],
+		"description": "County Form Field"
+	},
+	"Bootstrap 5: ID Form Group": {
+		"prefix": "!form-id",
+		"body": [
+			"<div class=\"mb-3\">",
+			"    <label id=\"id_label\" for=\"id\">$1 ID</label>",
+			"    <input id=\"id\" name=\"id\" type=\"text\" class=\"form-control\" />",
+			"</div>"
+		],
+		"description": "Bootstrap ID Form Field"
+	},
+	"Bootstrap 5: Major Form Group": {
+		"prefix": "!form-major",
+		"body": [
+			"<div class=\"mb-3\">",
+			"    <label id=\"major_label\" for=\"major\">Major</label>",
+			"    <input id=\"major\" name=\"major\" type=\"text\" class=\"form-control\" />",
+			"</div>"
+		],
+		"description": "Bootstrap Major Form Field"
+	},
+	"Bootstrap 5: GPA Form Group": {
+		"prefix": "!form-gpa",
+		"body": [
+			"<div class=\"mb-3\">",
+			"    <label id=\"gpa_label\" for=\"gpa\">GPA</label>",
+			"    <input id=\"gpa\" name=\"gpa\" type=\"text\" class=\"form-control\" />",
+			"</div>"
+		],
+		"description": "Bootstrap GPA Form Field"
+	},
+	"Bootstrap 5: Signature Form Group": {
+		"prefix": "!form-signature",
+		"body": [
+			"<div class=\"mb-3\">",
+			"    <label id=\"signature_label\" for=\"signature\">Signature</label>",
+			"    <input id=\"signature\" name=\"signature\" type=\"text\" class=\"form-control\" />",
+			"</div>"
+		],
+		"description": "Bootstrap Signature Form Field"
+	},
+	"Bootstrap 5: Date Form Group": {
+		"prefix": "!form-date",
+		"body": [
+			"<div class=\"mb-3\">",
+			"    <label id=\"date_label\" for=\"date\">Date</label>",
+			"    <input id=\"date\" name=\"date\" type=\"text\" class=\"form-control\" />",
+			"</div>"
+		],
+		"description": "Bootstrap Date Form Field"
+	},
+	"Bootstrap 5: Time Form Group": {
+		"prefix": "!form-time",
+		"body": [
+			"<div class=\"mb-3\">",
+			"    <label id=\"time_label\" for=\"time\">Time</label>",
+			"    <input id=\"time\" name=\"time\" type=\"text\" class=\"form-control\" />",
+			"</div>"
+		],
+		"description": "Bootstrap Time Form Field"
+	},
+	"Bootstrap 5: Select": {
+		"prefix": "!Form-select",
+		"body": [
+			"<div class=\"select\">",
+			"    <label id=\"$1_label\" for=\"$1\">$2</label>",
+			"    <div class=\"input-group mb-3\">",
+			"        <select id=\"$1\" name=\"$1\" class=\"form-control form-select\" aria-label=\"$2\">",
+            "            <option></option>",
+            "            <option>$3</option>",
+            "            <option>$4</option>",
+        	"        </select>",
+			"    </div>",
+			"</div>"
+		],
+		"description": "Bootstrap Select Form Field"
+	},
+	"Bootstrap 5: File Upload": {
+		"prefix": "!form-file-upload",
+		"body": [
+			"<div class=\"file-upload\">",
+			"    <label for=\"file_upload\">File Upload</label>",
+			"    <div class=\"custom-file\">",
+			"        <div class=\"input-group mb-3\">",
+            "            <input id=\"file_upload\" name=\"file_upload\" type=\"file\" class=\"custom-file-input form-control\" aria-label=\"File Upload\" />",
+        	"        </div>",
+			"    </div>",
+			"</div>"
+		],
+		"description": "Bootstrap File Form Field"
+	},
+	"Bootstrap 5: Amount": {
+		"prefix": "!Form-amount",
+		"body": [
+			"<div class=\"amount\">",
+			"    <label id=\"amount_label\" for=\"amount\">Amount</label>",
+			"    <div class=\"input-group mb-3\">",
+			"        <div class=\"input-group-text\">$</div>",
+            "        <input id=\"amount\" name=\"amount\" type=\"number\" class=\"form-control\" value=\"0.00\" aria-label=\"Total Amount\" />",
+        	"    </div>",
+			"</div>"
+		],
+		"description": "Bootstrap Amount Form Field"
+	},
+	"Bootstrap 5: Radio Button Form Check": {
+		"prefix": "!form-radio-button",
+		"body": [
+			"<div class=\"form-check mb-3\">",
+			"    <input id=\"$1\" name=\"$1\" type=\"radio\" class=\"form-check-input\" value=\"$3\" />",
+			"    <label id=\"$1_label\" class=\"form-check-label\" for=\"$1\">$2</label>",
+			"</div>"
+		],
+		"description": "Bootstrap Radio Button Form Check"
+	},
+	"Bootstrap 5: Checkbox Form Check": {
+		"prefix": "!Form-checkbox",
+		"body": [
+			"<div class=\"form-check mb-3\">",
+			"    <input id=\"$1\" name=\"$1\" type=\"checkbox\" class=\"form-check-input\" value=\"$3\" />",
+			"    <label id=\"$1_label\" class=\"form-check-label\" for=\"$1\">$2</label>",
+			"</div>"
+		],
+		"description": "Bootstrap Checkbox Form Check"
+	},
+	"Bootstrap 5: Text Area": {
+		"prefix": "*!Form-textarea",
+		"body": [
+			"<div class=\"form-check mb-3\">",
+			"    <label id=\"$1_label\" for=\"$1\" class=\"required\">$2</label>",
+			"    <textarea id=\"$1\" name=\"$1\" rows=\"5\" class=\"form-control\"></textarea>",
+			"</div>"
+		],
+		"description": "Bootstrap Checkbox Form Check"
+	}
+}
