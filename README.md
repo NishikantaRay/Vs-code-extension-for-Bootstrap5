@@ -1,6 +1,8 @@
 # Bootstrap 5 Snippets 
 The first, (currently only) and hands down BEST bootstrap 5 snippets and Fontawesome5 snippets extension. Includes templates, powerful utility snippets, and much more.
 
+![](demo.gif)
+
 ## ***Features***
 
  - Accordions
@@ -14,10 +16,6 @@ The first, (currently only) and hands down BEST bootstrap 5 snippets and Fontawe
  - Modals
  - Navbars
  - Fontawesome5
-
-
- ![](demo.gif) 
-
 
 ## Powerful, Simple, ***Flex*** Snippets
 > **Center, position or reorder any element, by any default breakpoint with under 10 snippets.**
