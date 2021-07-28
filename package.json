@@ -13,7 +13,7 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/NishikantaRay/Vs-code-extension-for-Bootstrap5"
-      },
+    },
     "icon": "icon.png",
     "contributes": {
         "snippets": [
