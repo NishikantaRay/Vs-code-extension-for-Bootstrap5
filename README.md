@@ -1,5 +1,5 @@
 # Bootstrap 5 Snippets 
-The first, (currently only) and hands down BEST bootstrap 5 snippet extension. Includes templates, powerful utility snippets, and much more.
+The first, (currently only) and hands down BEST bootstrap 5 snippets and Fontawesome5 snippets extension. Includes templates, powerful utility snippets, and much more.
 
 ## ***Features***
 
@@ -13,6 +13,7 @@ The first, (currently only) and hands down BEST bootstrap 5 snippet extension. I
  - Grids
  - Modals
  - Navbars
+ - Fontawesome5
 
 
  ![](demo.gif) 
