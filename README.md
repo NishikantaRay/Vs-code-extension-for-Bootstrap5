@@ -3,6 +3,8 @@ The first, (currently only) and hands down BEST bootstrap 5 snippets and Fontawe
 
 ![](demo.gif)
 
+![](demo.gif)
+
 ## ***Features***
 
  - Accordions
@@ -15,7 +17,10 @@ The first, (currently only) and hands down BEST bootstrap 5 snippets and Fontawe
  - Grids
  - Modals
  - Navbars
+<<<<<<< HEAD
  - Fontawesome5
+=======
+>>>>>>> 6be26f6fa369766213550e68c0b648ea6d208aef
 
 ## Powerful, Simple, ***Flex*** Snippets
 > **Center, position or reorder any element, by any default breakpoint with under 10 snippets.**
@@ -115,4 +120,6 @@ Trigger | Description
 
 ### 1.0.0 - Initial release
 
-### 1.0.1 - Added 30+ form group snippets
+### 1.1.0 - Added 30+ form group snippets
+
+### 1.2.0 - Added fontawesome5
