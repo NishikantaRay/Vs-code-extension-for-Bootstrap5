@@ -72,6 +72,14 @@
             {
                 "language": "html",
                 "path": "./snippets/formgroup.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/font.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/fontawesome.code-snippets"
             }
         ]
     }
