@@ -80,6 +80,10 @@
             {
                 "language": "html",
                 "path": "./snippets/fontawesome.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/stickybar.code-snippets"
             }
         ]
     }

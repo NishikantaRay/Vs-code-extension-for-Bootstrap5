@@ -111,6 +111,19 @@ Trigger | Description
 !form-radio-button |
 !form-checkbox |
 
+### Prefixes
+
+| Prefix            | Icon Font                               | Version |
+|-------------------|-----------------------------------------|---------|
+| `fas`,`far`,`fab` | [Font Awesome Pro][fa]                  | 5.15.3  |
+
+
+Examples:
+
+* `fa-check`+<kbd>Tab</kbd> completes to `<i class="fa fa-check"></i>`
+* `glyphicon-check`+<kbd>Tab</kbd> completes to `<span class="glyphicon glyphicons-check"></span>`
+* well, you get the idea
+
 ## Releases :
 
 ### 1.0.0 - Initial release
@@ -118,3 +131,5 @@ Trigger | Description
 ### 1.1.0 - Added 30+ form group snippets
 
 ### 1.2.0 - Added fontawesome5
+
+### 1.3.0 - Added fontawesome6
