@@ -2,7 +2,7 @@
     "name": "bootstrap5snippets",
     "displayName": "Bootstrap 5",
     "description": "One Extension for all Bootstrap 5 snippets",
-    "version": "1.5.0",
+    "version": "1.7.0",
     "publisher": "Nishikanta12",
     "engines": {
         "vscode": "^1.57.0"
