@@ -1,0 +1,166 @@
+{
+    "@import": {
+      "prefix": "imp",
+      "body": "@import ${1:filePath};",
+      "description": "import a file"
+    },
+    "@use": {
+      "prefix": "use",
+      "body": "@use ${1:filePath} as *;",
+      "description": "@use 'file' as *"
+    },
+    "@forward": {
+      "prefix": "fw",
+      "body": "@forward ${1:filePath};",
+      "description": "@forward 'file'"
+    },
+    "calc": {
+      "prefix": "clc",
+      "body": "calc($1);",
+      "description": "calc()"
+    },
+    "breakpoints": {
+      "prefix": "brpt",
+      "body": [
+        "$$breakpoints: (",
+        "  \"mini\": \"480px\",",
+        "  \"small\": \"700px\",",
+        "  \"menu\": \"1000\",",
+        "  \"big\": \"1 240px\",",
+        "  \"bigger\": \"1366px\",",
+        "  \"huge\": \"1440px\",",
+        ");"
+      ],
+      "description": "creates default breakpoint map"
+    },
+    "mediaquery mixins": {
+      "prefix": "mqm",
+      "body": [
+        "@mixin responsiveMax(${1:size}) {",
+        "  @media only screen and (max-width: ${1:size}) {",
+        "    @content;",
+        "  }",
+        "}",
+        "",
+        "@mixin responsiveMin(${2:size}) {",
+        "  @media only screen and (min-width: ${2:size}) {",
+        "    @content;",
+        "  }",
+        "}",
+        "",
+        "@mixin responsiveMinMax(${3:sizeMin}, ${4:sizeMax}) {",
+        "  @media only screen and (min-width: ${3:sizeMin}) and (max-width: ${4:sizeMax}) {",
+        "    @content;",
+        "  }",
+        "}"
+      ],
+      "description": "Inserts default media queries for breakpoints map"
+    },
+    "position absolute cover parent": {
+      "prefix": "pacp",
+      "body": [
+        "position: absolute;",
+        "top: 0;",
+        "bottom: 0;",
+        "left: 0;",
+        "right: 0;"
+      ],
+      "description": "position absolute cover parent"
+    },
+    "background image cover": {
+      "prefix": "bico",
+      "body": [
+        "background-image: url($1);",
+        "background-size: cover;",
+        "background-repeat: no-repeat;"
+      ],
+      "description": "background image size cover"
+    },
+    "background image contain": {
+      "prefix": "bicn",
+      "body": [
+        "background-image: url($1);",
+        "background-size: contain;",
+        "background-repeat: no-repeat;"
+      ],
+      "description": "background image size contain"
+    },
+    "responsiveMax mini": {
+      "prefix": "rmxs",
+      "body": ["@include responsiveMax(mini){", "$1", "}"],
+      "description": "responsiveMax mixin for mobile"
+    },
+    "responsiveMax small": {
+      "prefix": "rms",
+      "body": ["@include responsiveMax(small){", "$1", "}"],
+      "description": "responsiveMax mixin for tablet Portret"
+    },
+    "responsiveMax medium": {
+      "prefix": "rmm",
+      "body": ["@include responsiveMax(medium){", "$1", "}"],
+      "description": "responsiveMax mixin for tablet Landscape"
+    },
+    "responsiveMax big": {
+      "prefix": "rmb",
+      "body": ["@include responsiveMax(big){", "$1", "}"],
+      "description": "responsiveMax mixin for laptop"
+    },
+    "responsiveMax huge": {
+      "prefix": "rmh",
+      "body": ["@include responsiveMax(huge){", "$1", "}"],
+      "description": "responsiveMax mixin for desktop"
+    },
+    "responsiveMin mini": {
+      "prefix": "rmixs",
+      "body": ["@include responsiveMin(mini){", "$1", "}"],
+      "description": "responsiveMin mixin for mobile"
+    },
+    "responsiveMin small": {
+      "prefix": "rmis",
+      "body": ["@include responsiveMin(small){", "$1", "}"],
+      "description": "responsiveMin mixin for tablet Landscape"
+    },
+    "responsiveMin medium": {
+      "prefix": "rmim",
+      "body": ["@include responsiveMin(medium){", "$1", "}"],
+      "description": "responsiveMin mixin for tablet Portret"
+    },
+    "responsiveMin big": {
+      "prefix": "rmib",
+      "body": ["@include responsiveMin(big){", "$1", "}"],
+      "description": "responsiveMin mixin for laptop"
+    },
+    "responsiveMin huge": {
+      "prefix": "rmih",
+      "body": ["@include responsiveMin(huge){", "$1", "}"],
+      "description": "responsiveMin mixin for desktop"
+    },
+    "function pixels to rem": {
+      "prefix": "funcrem",
+      "body": [
+        "@function rem($pixels, $context: 16){",
+        "@return ($pixels/$context) * 1rem;",
+        "}"
+      ],
+      "description": "function to convert pixels to rem"
+    },
+    "pixels to rem": {
+      "prefix": "rem",
+      "body": "rem($1);",
+      "description": "use the rem function"
+    },
+    "function pixels to em": {
+      "prefix": "funcem",
+      "body": [
+        "@function rem($pixels, $context: ${1:16}){",
+        "@return ($pixels/$context)em;",
+        "}"
+      ],
+      "description": "function to convert pixels to em"
+    },
+    "pixels to em": {
+      "prefix": "em",
+      "body": "em($1)",
+      "description": "use the em function"
+    }
+  }

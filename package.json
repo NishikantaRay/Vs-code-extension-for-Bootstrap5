@@ -84,6 +84,14 @@
             {
                 "language": "html",
                 "path": "./snippets/stickybar.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/components.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/sass.code-snippets"
             }
         ]
     }
