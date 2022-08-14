@@ -1,4 +1,4 @@
-# Bootstrap 5 Snippets 
+# Bootstrap 5 Extension 
 The first, (currently only) and hands down BEST bootstrap 5 snippets and Fontawesome4-5-6 snippets extension. Includes templates, powerful utility snippets, and much more.
 <p align="center">
   <img width="600" height="400" src="icon.png">
@@ -140,3 +140,11 @@ Examples:
 ### 1.2.0 - Added fontawesome5
 
 ### 1.3.0 - Added fontawesome6
+
+### 1.4.0 - Added fontawesome pro support
+
+### 1.5.0 - Added Bootstrap 5.2 version
+
+### 1.6.0 - Added more code snippets
+
+### 1.7.0 - Sass support
