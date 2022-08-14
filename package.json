@@ -1,7 +1,7 @@
 {
     "name": "bootstrap5snippets",
-    "displayName": "Bootstrap5-Snippets",
-    "description": "One Extension for all Bootstrap5 snippets",
+    "displayName": "Bootstrap 5",
+    "description": "One Extension for all Bootstrap 5 snippets",
     "version": "1.5.0",
     "publisher": "Nishikanta12",
     "engines": {
