@@ -1,0 +1,172 @@
+{
+  "Popover Basic": {
+    "prefix": "bs5-popover",
+    "body": [
+      "<button type=\"button\" class=\"btn btn-${1|lg btn-danger,primary,secondary,success,warning,info,light,dark|}\" data-bs-toggle=\"popover\" data-bs-title=\"${2:Popover title}\" data-bs-content=\"${3:And here's some amazing content. It's very engaging. Right?}\">",
+      "  ${4:Click to toggle popover}",
+      "</button>"
+    ],
+    "description": "Basic popover with title and content"
+  },
+  
+  "Popover Directions": {
+    "prefix": "bs5-popover-directions",
+    "body": [
+      "<button type=\"button\" class=\"btn btn-${1|secondary,primary,success,danger,warning,info,light,dark|}\" data-bs-container=\"body\" data-bs-toggle=\"popover\" data-bs-placement=\"top\" data-bs-content=\"${2:Top popover}\">",
+      "  ${3:Popover on top}",
+      "</button>",
+      "<button type=\"button\" class=\"btn btn-${4|secondary,primary,success,danger,warning,info,light,dark|}\" data-bs-container=\"body\" data-bs-toggle=\"popover\" data-bs-placement=\"right\" data-bs-content=\"${5:Right popover}\">",
+      "  ${6:Popover on right}",
+      "</button>",
+      "<button type=\"button\" class=\"btn btn-${7|secondary,primary,success,danger,warning,info,light,dark|}\" data-bs-container=\"body\" data-bs-toggle=\"popover\" data-bs-placement=\"bottom\" data-bs-content=\"${8:Bottom popover}\">",
+      "  ${9:Popover on bottom}",
+      "</button>",
+      "<button type=\"button\" class=\"btn btn-${10|secondary,primary,success,danger,warning,info,light,dark|}\" data-bs-container=\"body\" data-bs-toggle=\"popover\" data-bs-placement=\"left\" data-bs-content=\"${11:Left popover}\">",
+      "  ${12:Popover on left}",
+      "</button>"
+    ],
+    "description": "Popovers for all four directions"
+  },
+  
+  "Popover Dismissible": {
+    "prefix": "bs5-popover-dismissible",
+    "body": [
+      "<a tabindex=\"0\" class=\"btn btn-${1|lg btn-danger,primary,secondary,success,warning,info,light,dark|}\" role=\"button\" data-bs-toggle=\"popover\" data-bs-trigger=\"focus\" data-bs-title=\"${2:Dismissible popover}\" data-bs-content=\"${3:And here's some amazing content. It's very engaging. Right?}\">${4:Dismissible popover}</a>"
+    ],
+    "description": "Dismissible popover that closes when clicked outside"
+  },
+  
+  "Popover with HTML": {
+    "prefix": "bs5-popover-html",
+    "body": [
+      "<button type=\"button\" class=\"btn btn-${1|secondary,primary,success,danger,warning,info,light,dark|}\" data-bs-toggle=\"popover\" data-bs-html=\"true\" data-bs-title=\"<b>${2:HTML Title}</b>\" data-bs-content=\"<p>Here's some <strong>${3:HTML content}</strong> with a <a href='#'>${4:link}</a>.</p>\">",
+      "  ${5:Popover with HTML}",
+      "</button>"
+    ],
+    "description": "Popover with HTML content"
+  },
+  
+  "Popover Hover": {
+    "prefix": "bs5-popover-hover",
+    "body": [
+      "<button type=\"button\" class=\"btn btn-${1|secondary,primary,success,danger,warning,info,light,dark|}\" data-bs-toggle=\"popover\" data-bs-trigger=\"hover\" data-bs-title=\"${2:Hover popover}\" data-bs-content=\"${3:This popover appears on hover}\">",
+      "  ${4:Hover for popover}",
+      "</button>"
+    ],
+    "description": "Popover that triggers on hover"
+  },
+  
+  "Popover with JavaScript": {
+    "prefix": "bs5-popover-js",
+    "body": [
+      "<button type=\"button\" class=\"btn btn-${1|secondary,primary,success,danger,warning,info,light,dark|}\" id=\"${2:popoverBtn}\">",
+      "  ${3:JavaScript popover}",
+      "</button>",
+      "",
+      "<script>",
+      "// Initialize popover",
+      "const popoverTriggerList = document.querySelectorAll('[data-bs-toggle=\"popover\"]');",
+      "const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));",
+      "",
+      "// Or initialize specific popover",
+      "const popoverBtn = document.getElementById('${2:popoverBtn}');",
+      "const popover = new bootstrap.Popover(popoverBtn, {",
+      "  title: '${4:JavaScript Popover}',",
+      "  content: '${5:This popover was created with JavaScript}',",
+      "  placement: '${6|top,bottom,left,right|}',",
+      "  trigger: '${7|click,hover,focus,manual|}'",
+      "});",
+      "</script>"
+    ],
+    "description": "Popover with JavaScript initialization"
+  },
+  
+  "Popover Custom Options": {
+    "prefix": "bs5-popover-options",
+    "body": [
+      "<button type=\"button\" class=\"btn btn-${1|secondary,primary,success,danger,warning,info,light,dark|}\" id=\"${2:customPopover}\">",
+      "  ${3:Custom popover}",
+      "</button>",
+      "",
+      "<script>",
+      "const customPopover = new bootstrap.Popover(document.getElementById('${2:customPopover}'), {",
+      "  title: '${4:Custom Title}',",
+      "  content: '${5:Custom content with options}',",
+      "  placement: '${6|top,bottom,left,right|}',",
+      "  trigger: '${7|click,hover,focus,manual|}',",
+      "  html: ${8|false,true|},",
+      "  animation: ${9|true,false|},",
+      "  delay: { show: ${10:500}, hide: ${11:100} },",
+      "  container: '${12|body,false|}',",
+      "  offset: [${13:0}, ${14:8}]",
+      "});",
+      "</script>"
+    ],
+    "description": "Popover with custom configuration options"
+  },
+  
+  "Popover in Modal": {
+    "prefix": "bs5-popover-modal",
+    "body": [
+      "<!-- Button trigger modal -->",
+      "<button type=\"button\" class=\"btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#${1:popoverModal}\">",
+      "  ${2:Open Modal with Popover}",
+      "</button>",
+      "",
+      "<!-- Modal -->",
+      "<div class=\"modal fade\" id=\"${1:popoverModal}\" tabindex=\"-1\">",
+      "  <div class=\"modal-dialog\">",
+      "    <div class=\"modal-content\">",
+      "      <div class=\"modal-header\">",
+      "        <h5 class=\"modal-title\">${3:Modal with Popover}</h5>",
+      "        <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\"></button>",
+      "      </div>",
+      "      <div class=\"modal-body\">",
+      "        <p>${4:This modal contains a popover.}</p>",
+      "        <button type=\"button\" class=\"btn btn-${5|secondary,primary,success,danger,warning,info|}\" data-bs-toggle=\"popover\" data-bs-title=\"${6:Modal Popover}\" data-bs-content=\"${7:This popover works inside a modal!}\">",
+      "          ${8:Show Popover}",
+      "        </button>",
+      "      </div>",
+      "    </div>",
+      "  </div>",
+      "</div>",
+      "",
+      "<script>",
+      "// Initialize popovers in modal",
+      "document.getElementById('${1:popoverModal}').addEventListener('shown.bs.modal', function () {",
+      "  const popoverTriggerList = this.querySelectorAll('[data-bs-toggle=\"popover\"]');",
+      "  [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));",
+      "});",
+      "</script>"
+    ],
+    "description": "Popover inside a Bootstrap modal"
+  },
+  
+  "Popover Card Style": {
+    "prefix": "bs5-popover-card",
+    "body": [
+      "<button type=\"button\" class=\"btn btn-${1|outline-secondary,primary,secondary,success,danger,warning,info|}\" data-bs-toggle=\"popover\" data-bs-html=\"true\" data-bs-title='<div class=\"d-flex align-items-center\"><img src=\"${2:https://via.placeholder.com/40}\" class=\"rounded-circle me-2\" width=\"40\" height=\"40\"><strong>${3:User Name}</strong></div>' data-bs-content='<div class=\"text-center\"><p class=\"mb-2\">${4:Some user information or description here.}</p><button class=\"btn btn-sm btn-primary\">${5:View Profile}</button></div>'>",
+      "  ${6:User Card Popover}",
+      "</button>"
+    ],
+    "description": "Popover styled like a user card with image and button"
+  },
+  
+  "Popover Multiple": {
+    "prefix": "bs5-popover-multiple",
+    "body": [
+      "<div class=\"btn-group\" role=\"group\">",
+      "  <button type=\"button\" class=\"btn btn-outline-${1|primary,secondary,success,danger,warning,info|}\" data-bs-toggle=\"popover\" data-bs-title=\"${2:First Title}\" data-bs-content=\"${3:First popover content}\">${4:First}</button>",
+      "  <button type=\"button\" class=\"btn btn-outline-${5|primary,secondary,success,danger,warning,info|}\" data-bs-toggle=\"popover\" data-bs-title=\"${6:Second Title}\" data-bs-content=\"${7:Second popover content}\">${8:Second}</button>",
+      "  <button type=\"button\" class=\"btn btn-outline-${9|primary,secondary,success,danger,warning,info|}\" data-bs-toggle=\"popover\" data-bs-title=\"${10:Third Title}\" data-bs-content=\"${11:Third popover content}\">${12:Third}</button>",
+      "</div>",
+      "",
+      "<script>",
+      "// Initialize all popovers",
+      "const popoverTriggerList = document.querySelectorAll('[data-bs-toggle=\"popover\"]');",
+      "const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));",
+      "</script>"
+    ],
+    "description": "Multiple popovers with initialization script"
+  }
+}

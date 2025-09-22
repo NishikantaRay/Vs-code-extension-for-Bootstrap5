@@ -1,0 +1,124 @@
+{
+    "Bootstrap 5 Offcanvas": {
+        "prefix": "!bs5-offcanvas",
+        "body": [
+            "<div class=\"offcanvas offcanvas-${1|start,end,top,bottom|}\" tabindex=\"-1\" id=\"${2:offcanvasId}\" aria-labelledby=\"${2}Label\">",
+            "  <div class=\"offcanvas-header\">",
+            "    <h5 class=\"offcanvas-title\" id=\"${2}Label\">${3:Offcanvas title}</h5>",
+            "    <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"offcanvas\" aria-label=\"Close\"></button>",
+            "  </div>",
+            "  <div class=\"offcanvas-body\">",
+            "    ${4:Offcanvas content goes here...}",
+            "  </div>",
+            "</div>",
+            "",
+            "<!-- Offcanvas trigger button -->",
+            "<button class=\"btn btn-${5|primary,secondary,success,danger,warning,info,light,dark|}\" type=\"button\" data-bs-toggle=\"offcanvas\" data-bs-target=\"#${2}\" aria-controls=\"${2}\">",
+            "  ${6:Toggle offcanvas}",
+            "</button>"
+        ],
+        "description": "Bootstrap 5 offcanvas component with trigger button"
+    },
+    "Bootstrap 5 Toast": {
+        "prefix": "!bs5-toast",
+        "body": [
+            "<div class=\"toast\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">",
+            "  <div class=\"toast-header\">",
+            "    <img src=\"${1:...}\" class=\"rounded me-2\" alt=\"${2:...}\" width=\"20\" height=\"20\">",
+            "    <strong class=\"me-auto\">${3:Bootstrap}</strong>",
+            "    <small class=\"text-muted\">${4:just now}</small>",
+            "    <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"toast\" aria-label=\"Close\"></button>",
+            "  </div>",
+            "  <div class=\"toast-body\">",
+            "    ${5:Hello, world! This is a toast message.}",
+            "  </div>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 toast notification"
+    },
+    "Bootstrap 5 Toast Container": {
+        "prefix": "!bs5-toast-container",
+        "body": [
+            "<div class=\"toast-container position-fixed ${1|top-0 end-0,top-0 start-0,bottom-0 end-0,bottom-0 start-0,top-50 start-50 translate-middle|} p-3\">",
+            "  <div class=\"toast\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">",
+            "    <div class=\"toast-header\">",
+            "      <strong class=\"me-auto\">${2:Notification}</strong>",
+            "      <small>${3:2 mins ago}</small>",
+            "      <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"toast\" aria-label=\"Close\"></button>",
+            "    </div>",
+            "    <div class=\"toast-body\">",
+            "      ${4:Toast message content}",
+            "    </div>",
+            "  </div>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 toast container with positioning"
+    },
+    "Bootstrap 5 Floating Labels": {
+        "prefix": "!bs5-floating-label",
+        "body": [
+            "<div class=\"form-floating mb-3\">",
+            "  <input type=\"${1|text,email,password,number|}\" class=\"form-control\" id=\"${2:floatingInput}\" placeholder=\"${3:name@example.com}\">",
+            "  <label for=\"${2}\">${4:Email address}</label>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 floating label form input"
+    },
+    "Bootstrap 5 Floating Labels Textarea": {
+        "prefix": "!bs5-floating-textarea",
+        "body": [
+            "<div class=\"form-floating\">",
+            "  <textarea class=\"form-control\" placeholder=\"${1:Leave a comment here}\" id=\"${2:floatingTextarea}\" style=\"height: ${3:100px}\"></textarea>",
+            "  <label for=\"${2}\">${4:Comments}</label>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 floating label textarea"
+    },
+    "Bootstrap 5 Color Mode Toggle": {
+        "prefix": "!bs5-color-mode",
+        "body": [
+            "<div class=\"dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle\">",
+            "  <button class=\"btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center\" id=\"bd-theme\" type=\"button\" aria-expanded=\"false\" data-bs-toggle=\"dropdown\" aria-label=\"Toggle theme (auto)\">",
+            "    <svg class=\"bi my-1 theme-icon-active\" width=\"1em\" height=\"1em\"><use href=\"#circle-half\"></use></svg>",
+            "    <span class=\"visually-hidden\" id=\"bd-theme-text\">Toggle theme</span>",
+            "  </button>",
+            "  <ul class=\"dropdown-menu dropdown-menu-end shadow\" aria-labelledby=\"bd-theme-text\">",
+            "    <li>",
+            "      <button type=\"button\" class=\"dropdown-item d-flex align-items-center\" data-bs-theme-value=\"light\" aria-pressed=\"false\">",
+            "        <svg class=\"bi me-2 opacity-50 theme-icon\" width=\"1em\" height=\"1em\"><use href=\"#sun-fill\"></use></svg>",
+            "        Light",
+            "        <svg class=\"bi ms-auto d-none\" width=\"1em\" height=\"1em\"><use href=\"#check2\"></use></svg>",
+            "      </button>",
+            "    </li>",
+            "    <li>",
+            "      <button type=\"button\" class=\"dropdown-item d-flex align-items-center\" data-bs-theme-value=\"dark\" aria-pressed=\"false\">",
+            "        <svg class=\"bi me-2 opacity-50 theme-icon\" width=\"1em\" height=\"1em\"><use href=\"#moon-stars-fill\"></use></svg>",
+            "        Dark",
+            "        <svg class=\"bi ms-auto d-none\" width=\"1em\" height=\"1em\"><use href=\"#check2\"></use></svg>",
+            "      </button>",
+            "    </li>",
+            "    <li>",
+            "      <button type=\"button\" class=\"dropdown-item d-flex align-items-center active\" data-bs-theme-value=\"auto\" aria-pressed=\"true\">",
+            "        <svg class=\"bi me-2 opacity-50 theme-icon\" width=\"1em\" height=\"1em\"><use href=\"#circle-half\"></use></svg>",
+            "        Auto",
+            "        <svg class=\"bi ms-auto d-none\" width=\"1em\" height=\"1em\"><use href=\"#check2\"></use></svg>",
+            "      </button>",
+            "    </li>",
+            "  </ul>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5.3 color mode toggle (requires custom JavaScript)"
+    },
+    "Bootstrap 5 Placeholder": {
+        "prefix": "!bs5-placeholder",
+        "body": [
+            "<p class=\"placeholder-glow\">",
+            "  <span class=\"placeholder col-${1|6,7,8,9,10,11,12|}\"></span>",
+            "</p>",
+            "<p class=\"placeholder-wave\">",
+            "  <span class=\"placeholder col-${2|6,7,8,9,10,11,12|}\"></span>",
+            "</p>"
+        ],
+        "description": "Bootstrap 5 placeholder loading animation"
+    }
+}

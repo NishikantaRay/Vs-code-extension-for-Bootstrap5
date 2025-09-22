@@ -1,0 +1,148 @@
+{
+  "Offcanvas Basic Left": {
+    "prefix": "bs5-offcanvas",
+    "body": [
+      "<!-- Button trigger offcanvas -->",
+      "<button class=\"btn btn-primary\" type=\"button\" data-bs-toggle=\"offcanvas\" data-bs-target=\"#offcanvas${1:Example}\" aria-controls=\"offcanvas${1:Example}\">",
+      "  ${2:Open Offcanvas}",
+      "</button>",
+      "",
+      "<!-- Offcanvas -->",
+      "<div class=\"offcanvas offcanvas-start\" tabindex=\"-1\" id=\"offcanvas${1:Example}\" aria-labelledby=\"offcanvas${1:Example}Label\">",
+      "  <div class=\"offcanvas-header\">",
+      "    <h5 class=\"offcanvas-title\" id=\"offcanvas${1:Example}Label\">${3:Offcanvas Title}</h5>",
+      "    <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"offcanvas\" aria-label=\"Close\"></button>",
+      "  </div>",
+      "  <div class=\"offcanvas-body\">",
+      "    ${4:Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.}",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Basic offcanvas component sliding from left"
+  },
+  
+  "Offcanvas Right": {
+    "prefix": "bs5-offcanvas-end",
+    "body": [
+      "<!-- Button trigger offcanvas -->",
+      "<button class=\"btn btn-primary\" type=\"button\" data-bs-toggle=\"offcanvas\" data-bs-target=\"#offcanvas${1:Right}\" aria-controls=\"offcanvas${1:Right}\">",
+      "  ${2:Open Right Offcanvas}",
+      "</button>",
+      "",
+      "<!-- Offcanvas -->",
+      "<div class=\"offcanvas offcanvas-end\" tabindex=\"-1\" id=\"offcanvas${1:Right}\" aria-labelledby=\"offcanvas${1:Right}Label\">",
+      "  <div class=\"offcanvas-header\">",
+      "    <h5 class=\"offcanvas-title\" id=\"offcanvas${1:Right}Label\">${3:Right Offcanvas}</h5>",
+      "    <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"offcanvas\" aria-label=\"Close\"></button>",
+      "  </div>",
+      "  <div class=\"offcanvas-body\">",
+      "    ${4:Content goes here}",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Offcanvas component sliding from right"
+  },
+  
+  "Offcanvas Top": {
+    "prefix": "bs5-offcanvas-top",
+    "body": [
+      "<!-- Button trigger offcanvas -->",
+      "<button class=\"btn btn-primary\" type=\"button\" data-bs-toggle=\"offcanvas\" data-bs-target=\"#offcanvas${1:Top}\" aria-controls=\"offcanvas${1:Top}\">",
+      "  ${2:Open Top Offcanvas}",
+      "</button>",
+      "",
+      "<!-- Offcanvas -->",
+      "<div class=\"offcanvas offcanvas-top\" tabindex=\"-1\" id=\"offcanvas${1:Top}\" aria-labelledby=\"offcanvas${1:Top}Label\">",
+      "  <div class=\"offcanvas-header\">",
+      "    <h5 class=\"offcanvas-title\" id=\"offcanvas${1:Top}Label\">${3:Top Offcanvas}</h5>",
+      "    <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"offcanvas\" aria-label=\"Close\"></button>",
+      "  </div>",
+      "  <div class=\"offcanvas-body\">",
+      "    ${4:Content goes here}",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Offcanvas component sliding from top"
+  },
+  
+  "Offcanvas Bottom": {
+    "prefix": "bs5-offcanvas-bottom",
+    "body": [
+      "<!-- Button trigger offcanvas -->",
+      "<button class=\"btn btn-primary\" type=\"button\" data-bs-toggle=\"offcanvas\" data-bs-target=\"#offcanvas${1:Bottom}\" aria-controls=\"offcanvas${1:Bottom}\">",
+      "  ${2:Open Bottom Offcanvas}",
+      "</button>",
+      "",
+      "<!-- Offcanvas -->",
+      "<div class=\"offcanvas offcanvas-bottom\" tabindex=\"-1\" id=\"offcanvas${1:Bottom}\" aria-labelledby=\"offcanvas${1:Bottom}Label\">",
+      "  <div class=\"offcanvas-header\">",
+      "    <h5 class=\"offcanvas-title\" id=\"offcanvas${1:Bottom}Label\">${3:Bottom Offcanvas}</h5>",
+      "    <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"offcanvas\" aria-label=\"Close\"></button>",
+      "  </div>",
+      "  <div class=\"offcanvas-body\">",
+      "    ${4:Content goes here}",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Offcanvas component sliding from bottom"
+  },
+  
+  "Offcanvas with Backdrop": {
+    "prefix": "bs5-offcanvas-backdrop",
+    "body": [
+      "<!-- Button trigger offcanvas -->",
+      "<button class=\"btn btn-primary\" type=\"button\" data-bs-toggle=\"offcanvas\" data-bs-target=\"#offcanvas${1:Backdrop}\" aria-controls=\"offcanvas${1:Backdrop}\">",
+      "  ${2:Open with Backdrop}",
+      "</button>",
+      "",
+      "<!-- Offcanvas -->",
+      "<div class=\"offcanvas offcanvas-start\" data-bs-backdrop=\"${3|true,false,static|}\" tabindex=\"-1\" id=\"offcanvas${1:Backdrop}\" aria-labelledby=\"offcanvas${1:Backdrop}Label\">",
+      "  <div class=\"offcanvas-header\">",
+      "    <h5 class=\"offcanvas-title\" id=\"offcanvas${1:Backdrop}Label\">${4:Offcanvas with Backdrop}</h5>",
+      "    <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"offcanvas\" aria-label=\"Close\"></button>",
+      "  </div>",
+      "  <div class=\"offcanvas-body\">",
+      "    ${5:Content goes here}",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Offcanvas component with configurable backdrop"
+  },
+  
+  "Offcanvas with Navigation": {
+    "prefix": "bs5-offcanvas-nav",
+    "body": [
+      "<!-- Button trigger offcanvas -->",
+      "<button class=\"btn btn-primary\" type=\"button\" data-bs-toggle=\"offcanvas\" data-bs-target=\"#offcanvas${1:Nav}\" aria-controls=\"offcanvas${1:Nav}\">",
+      "  ${2:Open Navigation}",
+      "</button>",
+      "",
+      "<!-- Offcanvas -->",
+      "<div class=\"offcanvas offcanvas-start\" tabindex=\"-1\" id=\"offcanvas${1:Nav}\" aria-labelledby=\"offcanvas${1:Nav}Label\">",
+      "  <div class=\"offcanvas-header\">",
+      "    <h5 class=\"offcanvas-title\" id=\"offcanvas${1:Nav}Label\">${3:Navigation}</h5>",
+      "    <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"offcanvas\" aria-label=\"Close\"></button>",
+      "  </div>",
+      "  <div class=\"offcanvas-body\">",
+      "    <nav class=\"navbar-nav\">",
+      "      <ul class=\"nav flex-column\">",
+      "        <li class=\"nav-item\">",
+      "          <a class=\"nav-link active\" href=\"#\">${4:Home}</a>",
+      "        </li>",
+      "        <li class=\"nav-item\">",
+      "          <a class=\"nav-link\" href=\"#\">${5:About}</a>",
+      "        </li>",
+      "        <li class=\"nav-item\">",
+      "          <a class=\"nav-link\" href=\"#\">${6:Services}</a>",
+      "        </li>",
+      "        <li class=\"nav-item\">",
+      "          <a class=\"nav-link\" href=\"#\">${7:Contact}</a>",
+      "        </li>",
+      "      </ul>",
+      "    </nav>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Offcanvas component with navigation menu"
+  }
+}

@@ -1,295 +1,370 @@
 {
-	"Bootstrap 5: Blank Form Group": {
-		"prefix": "!form-blank",
-		"body": [
-			"<div class=\"mb-3\">",
-			"    <label id=\"$1_label\" for=\"$1\">${2}</label>",
-			"    <input id=\"$1\" name=\"$1\" type=\"text\" class=\"form-control\" />",
-			"</div>"
-		],
-		"description": "Blank Form Group"
-	},
-	"Bootstrap 5: Full Name Form Group": {
-		"prefix": "!form-fullname",
-		"body": [
-			"<div class=\"mb-3\">",
-			"    <label id=\"full_name_label\" for=\"full_name\">Full Name</label>",
-			"    <input id=\"full_name\" name=\"full_name\" type=\"text\" class=\"form-control\" />",
-			"</div>"
-		],
-		"description": "Full Name Form Group"
-	},
-	"Bootstrap 5: First Name Form Group": {
-		"prefix": "!form-Firstname",
-		"body": [
-			"<div class=\"mb-3\">",
-			"    <label id=\"first_name_label\" for=\"first_name\">First Name</label>",
-			"    <input id=\"first_name\" name=\"first_name\" type=\"text\" class=\"form-control\" />",
-			"</div>"
-		],
-		"description": "First Name Form Group"
-	},
-	"Bootstrap 5: Middle Form Group": {
-		"prefix": "!form-middlename",
-		"body": [
-			"<div class=\"mb-3\">",
-			"    <label id=\"middle_name_label\" for=\"middle_name\">Middle Name</label>",
-			"    <input id=\"middle_name\" name=\"middle_name\" type=\"text\" class=\"form-control\" />",
-			"</div>"
-		],
-		"description": "Middle Name Form Group"
-	},
-	"Bootstrap 5: Last Name Form Group": {
-		"prefix": "!form-last-name",
-		"body": [
-			"<div class=\"mb-3\">",
-			"    <label id=\"last_name_label\" for=\"last_name\">Last Name</label>",
-			"    <input id=\"last_name\" name=\"last_name\" type=\"text\" class=\"form-control\" />",
-			"</div>"
-		],
-		"description": "Last Name Form Group"
-	},
-	"Bootstrap 5: Email Form Group": {
-		"prefix": "!form-email",
-		"body": [
-			"<div class=\"mb-3\">",
-			"    <label id=\"email_label\" for=\"email\">Email Address</label>",
-			"    <input id=\"email\" name=\"email\" type=\"email\" class=\"form-control\" />",
-			"</div>"
-		],
-		"description": "Email Form Group"
-	},
-	"Bootstrap 5: Password Form Group": {
-		"prefix": "!form-password",
-		"body": [
-			"<div class=\"mb-3\">",
-			"    <label id=\"password_label\" for=\"password\">Password</label>",
-			"    <input id=\"password\" name=\"password\" type=\"password\" class=\"form-control\" />",
-			"</div>"
-		],
-		"description": "Email Form Group"
-	},
-	"Bootstrap 5: Phone Form Group": {
-		"prefix": "!form-phone",
-		"body": [
-			"<div class=\"mb-3\">",
-			"    <label id=\"phone_label\" for=\"phone\">Phone Number</label>",
-			"    <input id=\"phone\" name=\"phone\" type=\"tel\" class=\"form-control\" />",
-			"</div>"
-		],
-		"description": "Phone Number Form Group"
-	},
-	"Bootstrap 5: Street Address Form Group": {
-		"prefix": "!form-street-address",
-		"body": [
-			"<div class=\"mb-3\">",
-			"    <label id=\"street_address_label\" for=\"street_address\">Street Address</label>",
-			"    <input id=\"street_address\" name=\"street_address\" type=\"text\" class=\"form-control\" />",
-			"</div>"
-		],
-		"description": "Street Address Form Group"
-	},
-	"Bootstrap 5: Street 1 Form Group": {
-		"prefix": "!form-street-1",
-		"body": [
-			"<div class=\"mb-3\">",
-			"    <label id=\"street_1_label\" for=\"street_1\">Street 1</label>",
-			"    <input id=\"street_1\" name=\"street_1\" type=\"text\" class=\"form-control\" />",
-			"</div>"
-		],
-		"description": "Street 1 Form Group"
-	},
-	"Bootstrap 5: Street 2 Form Group": {
-		"prefix": "!form-street-2",
-		"body": [
-			"<div class=\"mb-3\">",
-			"    <label id=\"street_2_label\" for=\"street_2\">Street 2</label>",
-			"    <input id=\"street_2\" name=\"street_2\" type=\"text\" class=\"form-control\" />",
-			"</div>"
-		],
-		"description": "Street 2 Form Group"
-	},
-	"Bootstrap 5: Street 3 Form Group": {
-		"prefix": "!form-street-3",
-		"body": [
-			"<div class=\"mb-3\">",
-			"    <label id=\"street_3_label\" for=\"street_3\">Street 3</label>",
-			"    <input id=\"street_3\" name=\"street_3\" type=\"text\" class=\"form-control\" />",
-			"</div>"
-		],
-		"description": "Street 3 Form Group"
-	},
-	"Bootstrap 5: City Form Group": {
-		"prefix": "!form-city",
-		"body": [
-			"<div class=\"mb-3\">",
-			"    <label id=\"city_label\" for=\"city\">City</label>",
-			"    <input id=\"city\" name=\"city\" type=\"text\" class=\"form-control\" />",
-			"</div>"
-		],
-		"description": "City Form Group"
-	},
-	"Bootstrap 5: State Form Group": {
-		"prefix": "!form-state",
-		"body": [
-			"<div class=\"mb-3\">",
-			"    <label id=\"state_label\" for=\"state\">State/Province</label>",
-			"    <input id=\"state\" name=\"state\" type=\"text\" class=\"form-control\" />",
-			"</div>"
-		],
-		"description": "State Form Group"
-	},
-	"Bootstrap 5: Country Form Group": {
-		"prefix": "!form-country",
-		"body": [
-			"<div class=\"mb-3\">",
-			"    <label id=\"country_label\" for=\"country\">Country</label>",
-			"    <input id=\"country\" name=\"country\" type=\"text\" class=\"form-control\" />",
-			"</div>"
-		],
-		"description": "Country Form Field"
-	},
-	"Bootstrap 5: County Form Group": {
-		"prefix": "!form-county",
-		"body": [
-			"<div class=\"mb-3\">",
-			"    <label id=\"county_label\" for=\"county\">County</label>",
-			"    <input id=\"county\" name=\"county\" type=\"text\" class=\"form-control\" />",
-			"</div>"
-		],
-		"description": "County Form Field"
-	},
-	"Bootstrap 5: ID Form Group": {
-		"prefix": "!form-id",
-		"body": [
-			"<div class=\"mb-3\">",
-			"    <label id=\"id_label\" for=\"id\">$1 ID</label>",
-			"    <input id=\"id\" name=\"id\" type=\"text\" class=\"form-control\" />",
-			"</div>"
-		],
-		"description": "Bootstrap ID Form Field"
-	},
-	"Bootstrap 5: Major Form Group": {
-		"prefix": "!form-major",
-		"body": [
-			"<div class=\"mb-3\">",
-			"    <label id=\"major_label\" for=\"major\">Major</label>",
-			"    <input id=\"major\" name=\"major\" type=\"text\" class=\"form-control\" />",
-			"</div>"
-		],
-		"description": "Bootstrap Major Form Field"
-	},
-	"Bootstrap 5: GPA Form Group": {
-		"prefix": "!form-gpa",
-		"body": [
-			"<div class=\"mb-3\">",
-			"    <label id=\"gpa_label\" for=\"gpa\">GPA</label>",
-			"    <input id=\"gpa\" name=\"gpa\" type=\"text\" class=\"form-control\" />",
-			"</div>"
-		],
-		"description": "Bootstrap GPA Form Field"
-	},
-	"Bootstrap 5: Signature Form Group": {
-		"prefix": "!form-signature",
-		"body": [
-			"<div class=\"mb-3\">",
-			"    <label id=\"signature_label\" for=\"signature\">Signature</label>",
-			"    <input id=\"signature\" name=\"signature\" type=\"text\" class=\"form-control\" />",
-			"</div>"
-		],
-		"description": "Bootstrap Signature Form Field"
-	},
-	"Bootstrap 5: Date Form Group": {
-		"prefix": "!form-date",
-		"body": [
-			"<div class=\"mb-3\">",
-			"    <label id=\"date_label\" for=\"date\">Date</label>",
-			"    <input id=\"date\" name=\"date\" type=\"text\" class=\"form-control\" />",
-			"</div>"
-		],
-		"description": "Bootstrap Date Form Field"
-	},
-	"Bootstrap 5: Time Form Group": {
-		"prefix": "!form-time",
-		"body": [
-			"<div class=\"mb-3\">",
-			"    <label id=\"time_label\" for=\"time\">Time</label>",
-			"    <input id=\"time\" name=\"time\" type=\"text\" class=\"form-control\" />",
-			"</div>"
-		],
-		"description": "Bootstrap Time Form Field"
-	},
-	"Bootstrap 5: Select": {
-		"prefix": "!Form-select",
-		"body": [
-			"<div class=\"select\">",
-			"    <label id=\"$1_label\" for=\"$1\">$2</label>",
-			"    <div class=\"input-group mb-3\">",
-			"        <select id=\"$1\" name=\"$1\" class=\"form-control form-select\" aria-label=\"$2\">",
-            "            <option></option>",
-            "            <option>$3</option>",
-            "            <option>$4</option>",
-        	"        </select>",
-			"    </div>",
-			"</div>"
-		],
-		"description": "Bootstrap Select Form Field"
-	},
-	"Bootstrap 5: File Upload": {
-		"prefix": "!form-file-upload",
-		"body": [
-			"<div class=\"file-upload\">",
-			"    <label for=\"file_upload\">File Upload</label>",
-			"    <div class=\"custom-file\">",
-			"        <div class=\"input-group mb-3\">",
-            "            <input id=\"file_upload\" name=\"file_upload\" type=\"file\" class=\"custom-file-input form-control\" aria-label=\"File Upload\" />",
-        	"        </div>",
-			"    </div>",
-			"</div>"
-		],
-		"description": "Bootstrap File Form Field"
-	},
-	"Bootstrap 5: Amount": {
-		"prefix": "!Form-amount",
-		"body": [
-			"<div class=\"amount\">",
-			"    <label id=\"amount_label\" for=\"amount\">Amount</label>",
-			"    <div class=\"input-group mb-3\">",
-			"        <div class=\"input-group-text\">$</div>",
-            "        <input id=\"amount\" name=\"amount\" type=\"number\" class=\"form-control\" value=\"0.00\" aria-label=\"Total Amount\" />",
-        	"    </div>",
-			"</div>"
-		],
-		"description": "Bootstrap Amount Form Field"
-	},
-	"Bootstrap 5: Radio Button Form Check": {
-		"prefix": "!form-radio-button",
-		"body": [
-			"<div class=\"form-check mb-3\">",
-			"    <input id=\"$1\" name=\"$1\" type=\"radio\" class=\"form-check-input\" value=\"$3\" />",
-			"    <label id=\"$1_label\" class=\"form-check-label\" for=\"$1\">$2</label>",
-			"</div>"
-		],
-		"description": "Bootstrap Radio Button Form Check"
-	},
-	"Bootstrap 5: Checkbox Form Check": {
-		"prefix": "!Form-checkbox",
-		"body": [
-			"<div class=\"form-check mb-3\">",
-			"    <input id=\"$1\" name=\"$1\" type=\"checkbox\" class=\"form-check-input\" value=\"$3\" />",
-			"    <label id=\"$1_label\" class=\"form-check-label\" for=\"$1\">$2</label>",
-			"</div>"
-		],
-		"description": "Bootstrap Checkbox Form Check"
-	},
-	"Bootstrap 5: Text Area": {
-		"prefix": "*!Form-textarea",
-		"body": [
-			"<div class=\"form-check mb-3\">",
-			"    <label id=\"$1_label\" for=\"$1\" class=\"required\">$2</label>",
-			"    <textarea id=\"$1\" name=\"$1\" rows=\"5\" class=\"form-control\"></textarea>",
-			"</div>"
-		],
-		"description": "Bootstrap Checkbox Form Check"
-	}
+    "Bootstrap 5 Name Fields Row": {
+        "prefix": ["bs5-name-row", "name-fields"],
+        "body": [
+            "<!-- Name Fields Row -->",
+            "<div class=\"row\">",
+            "  <div class=\"col-md-6 mb-3\">",
+            "    <label for=\"firstName\" class=\"form-label\">",
+            "      ${1:First Name} <span class=\"text-danger\">*</span>",
+            "    </label>",
+            "    <input ",
+            "      type=\"text\" ",
+            "      class=\"form-control\" ",
+            "      id=\"firstName\" ",
+            "      name=\"firstName\"",
+            "      required",
+            "      autocomplete=\"given-name\"",
+            "      placeholder=\"${2:Enter first name}\"",
+            "    >",
+            "    <div class=\"invalid-feedback\">Please provide your first name.</div>",
+            "  </div>",
+            "  <div class=\"col-md-6 mb-3\">",
+            "    <label for=\"lastName\" class=\"form-label\">",
+            "      ${3:Last Name} <span class=\"text-danger\">*</span>",
+            "    </label>",
+            "    <input ",
+            "      type=\"text\" ",
+            "      class=\"form-control\" ",
+            "      id=\"lastName\" ",
+            "      name=\"lastName\"",
+            "      required",
+            "      autocomplete=\"family-name\"",
+            "      placeholder=\"${4:Enter last name}\"",
+            "    >",
+            "    <div class=\"invalid-feedback\">Please provide your last name.</div>",
+            "  </div>",
+            "</div>$0"
+        ],
+        "description": "👥 Bootstrap 5 name fields row - Professional first and last name inputs with validation and autocomplete."
+    },
+    
+    "Bootstrap 5 Address Fields": {
+        "prefix": ["bs5-address", "address-fields"],
+        "body": [
+            "<!-- Address Fields -->",
+            "<fieldset class=\"mb-4\">",
+            "  <legend class=\"form-label h5\">${1:Address Information}</legend>",
+            "  ",
+            "  <!-- Street Address -->",
+            "  <div class=\"mb-3\">",
+            "    <label for=\"street\" class=\"form-label\">",
+            "      ${2:Street Address} <span class=\"text-danger\">*</span>",
+            "    </label>",
+            "    <input ",
+            "      type=\"text\" ",
+            "      class=\"form-control\" ",
+            "      id=\"street\" ",
+            "      name=\"street\"",
+            "      required",
+            "      autocomplete=\"street-address\"",
+            "      placeholder=\"${3:123 Main Street}\"",
+            "    >",
+            "    <div class=\"invalid-feedback\">Please provide a valid street address.</div>",
+            "  </div>",
+            "  ",
+            "  <!-- Address Line 2 -->",
+            "  <div class=\"mb-3\">",
+            "    <label for=\"street2\" class=\"form-label\">${4:Apartment, suite, etc. (optional)}</label>",
+            "    <input ",
+            "      type=\"text\" ",
+            "      class=\"form-control\" ",
+            "      id=\"street2\" ",
+            "      name=\"street2\"",
+            "      autocomplete=\"address-line2\"",
+            "      placeholder=\"${5:Apt 4B}\"",
+            "    >",
+            "  </div>",
+            "  ",
+            "  <!-- City, State, ZIP Row -->",
+            "  <div class=\"row\">",
+            "    <div class=\"col-md-6 mb-3\">",
+            "      <label for=\"city\" class=\"form-label\">",
+            "        ${6:City} <span class=\"text-danger\">*</span>",
+            "      </label>",
+            "      <input ",
+            "        type=\"text\" ",
+            "        class=\"form-control\" ",
+            "        id=\"city\" ",
+            "        name=\"city\"",
+            "        required",
+            "        autocomplete=\"address-level2\"",
+            "        placeholder=\"${7:New York}\"",
+            "      >",
+            "      <div class=\"invalid-feedback\">Please provide a valid city.</div>",
+            "    </div>",
+            "    <div class=\"col-md-3 mb-3\">",
+            "      <label for=\"state\" class=\"form-label\">",
+            "        ${8:State} <span class=\"text-danger\">*</span>",
+            "      </label>",
+            "      <select class=\"form-select\" id=\"state\" name=\"state\" required autocomplete=\"address-level1\">",
+            "        <option value=\"\" selected disabled>Choose...</option>",
+            "        <option value=\"NY\">New York</option>",
+            "        <option value=\"CA\">California</option>",
+            "        <option value=\"TX\">Texas</option>",
+            "      </select>",
+            "      <div class=\"invalid-feedback\">Please select a valid state.</div>",
+            "    </div>",
+            "    <div class=\"col-md-3 mb-3\">",
+            "      <label for=\"zip\" class=\"form-label\">",
+            "        ${9:ZIP Code} <span class=\"text-danger\">*</span>",
+            "      </label>",
+            "      <input ",
+            "        type=\"text\" ",
+            "        class=\"form-control\" ",
+            "        id=\"zip\" ",
+            "        name=\"zip\"",
+            "        required",
+            "        autocomplete=\"postal-code\"",
+            "        placeholder=\"${10:12345}\"",
+            "        pattern=\"[0-9]{5}(-[0-9]{4})?\"",
+            "      >",
+            "      <div class=\"invalid-feedback\">Please provide a valid ZIP code.</div>",
+            "    </div>",
+            "  </div>",
+            "</fieldset>$0"
+        ],
+        "description": "🏠 Bootstrap 5 complete address fields - Professional address form with proper grouping, validation, and autocomplete."
+    },
+    
+    "Bootstrap 5 Contact Information": {
+        "prefix": ["bs5-contact", "contact-info"],
+        "body": [
+            "<!-- Contact Information -->",
+            "<fieldset class=\"mb-4\">",
+            "  <legend class=\"form-label h5\">${1:Contact Information}</legend>",
+            "  ",
+            "  <div class=\"row\">",
+            "    <!-- Email -->",
+            "    <div class=\"col-md-6 mb-3\">",
+            "      <label for=\"email\" class=\"form-label\">",
+            "        ${2:Email Address} <span class=\"text-danger\">*</span>",
+            "      </label>",
+            "      <input ",
+            "        type=\"email\" ",
+            "        class=\"form-control\" ",
+            "        id=\"email\" ",
+            "        name=\"email\"",
+            "        required",
+            "        autocomplete=\"email\"",
+            "        placeholder=\"${3:name@example.com}\"",
+            "      >",
+            "      <div class=\"invalid-feedback\">Please provide a valid email address.</div>",
+            "    </div>",
+            "    ",
+            "    <!-- Phone -->",
+            "    <div class=\"col-md-6 mb-3\">",
+            "      <label for=\"phone\" class=\"form-label\">",
+            "        ${4:Phone Number}${5| , <span class=\"text-danger\">*</span>|}",
+            "      </label>",
+            "      <input ",
+            "        type=\"tel\" ",
+            "        class=\"form-control\" ",
+            "        id=\"phone\" ",
+            "        name=\"phone\"",
+            "        ${6|,required|}",
+            "        autocomplete=\"tel\"",
+            "        placeholder=\"${7:(555) 123-4567}\"",
+            "        pattern=\"[0-9]{3}-[0-9]{3}-[0-9]{4}\"",
+            "      >",
+            "      <div class=\"form-text\">Format: (555) 123-4567</div>",
+            "      <div class=\"invalid-feedback\">Please provide a valid phone number.</div>",
+            "    </div>",
+            "  </div>",
+            "</fieldset>$0"
+        ],
+        "description": "📞 Bootstrap 5 contact information - Professional email and phone fields with proper validation and formatting."
+    },
+    
+    "Bootstrap 5 Date Range Fields": {
+        "prefix": ["bs5-date-range", "date-fields"],
+        "body": [
+            "<!-- Date Range Fields -->",
+            "<div class=\"row\">",
+            "  <div class=\"col-md-6 mb-3\">",
+            "    <label for=\"startDate\" class=\"form-label\">",
+            "      ${1:Start Date} <span class=\"text-danger\">*</span>",
+            "    </label>",
+            "    <input ",
+            "      type=\"date\" ",
+            "      class=\"form-control\" ",
+            "      id=\"startDate\" ",
+            "      name=\"startDate\"",
+            "      required",
+            "      aria-describedby=\"startDateHelp\"",
+            "      min=\"${2:2023-01-01}\"",
+            "      max=\"${3:2025-12-31}\"",
+            "    >",
+            "    <div id=\"startDateHelp\" class=\"form-text\">Select the ${1:start date}</div>",
+            "    <div class=\"invalid-feedback\">Please provide a valid start date.</div>",
+            "  </div>",
+            "  <div class=\"col-md-6 mb-3\">",
+            "    <label for=\"endDate\" class=\"form-label\">",
+            "      ${4:End Date} <span class=\"text-danger\">*</span>",
+            "    </label>",
+            "    <input ",
+            "      type=\"date\" ",
+            "      class=\"form-control\" ",
+            "      id=\"endDate\" ",
+            "      name=\"endDate\"",
+            "      required",
+            "      aria-describedby=\"endDateHelp\"",
+            "      min=\"${2:2023-01-01}\"",
+            "      max=\"${3:2025-12-31}\"",
+            "    >",
+            "    <div id=\"endDateHelp\" class=\"form-text\">Select the ${4:end date}</div>",
+            "    <div class=\"invalid-feedback\">Please provide a valid end date.</div>",
+            "  </div>",
+            "</div>$0"
+        ],
+        "description": "📅 Bootstrap 5 date range fields - Professional date inputs with validation, constraints, and accessibility."
+    },
+    
+    "Bootstrap 5 Search Field": {
+        "prefix": ["bs5-search", "search-input"],
+        "body": [
+            "<div class=\"mb-3\">",
+            "  <label for=\"${1:search}\" class=\"form-label visually-hidden\">${2:Search}</label>",
+            "  <div class=\"input-group\">",
+            "    <span class=\"input-group-text\">",
+            "      <i class=\"fas fa-search\" aria-hidden=\"true\"></i>",
+            "    </span>",
+            "    <input ",
+            "      type=\"search\" ",
+            "      class=\"form-control\" ",
+            "      id=\"${1:search}\" ",
+            "      name=\"${1:search}\"",
+            "      placeholder=\"${3:Search...}\"",
+            "      aria-label=\"${2:Search}\"",
+            "      autocomplete=\"off\"",
+            "      role=\"searchbox\"",
+            "    >",
+            "    <button ",
+            "      class=\"btn btn-outline-secondary\" ",
+            "      type=\"button\"",
+            "      onclick=\"${4:clearSearch}()\"",
+            "      aria-label=\"Clear search\"",
+            "    >",
+            "      <i class=\"fas fa-times\" aria-hidden=\"true\"></i>",
+            "    </button>",
+            "  </div>",
+            "</div>$0"
+        ],
+        "description": "🔍 Bootstrap 5 search field - Professional search input with icon, clear button, and proper search semantics."
+    },
+    
+    "Bootstrap 5 Multi-Select Checkboxes": {
+        "prefix": ["bs5-multi-check", "checkbox-group"],
+        "body": [
+            "<!-- Multi-Select Checkboxes -->",
+            "<fieldset class=\"mb-3\">",
+            "  <legend class=\"form-label\">${1:Select Options}</legend>",
+            "  <div class=\"row\" role=\"group\" aria-describedby=\"${2:checkboxGroup}Help\">",
+            "    ",
+            "    <div class=\"col-md-4\">",
+            "      <div class=\"form-check\">",
+            "        <input ",
+            "          class=\"form-check-input\" ",
+            "          type=\"checkbox\" ",
+            "          value=\"${3:option1}\" ",
+            "          id=\"${2:checkboxGroup}1\"",
+            "          name=\"${2:checkboxGroup}[]\"",
+            "        >",
+            "        <label class=\"form-check-label\" for=\"${2:checkboxGroup}1\">${4:Option 1}</label>",
+            "      </div>",
+            "    </div>",
+            "    ",
+            "    <div class=\"col-md-4\">",
+            "      <div class=\"form-check\">",
+            "        <input ",
+            "          class=\"form-check-input\" ",
+            "          type=\"checkbox\" ",
+            "          value=\"${5:option2}\" ",
+            "          id=\"${2:checkboxGroup}2\"",
+            "          name=\"${2:checkboxGroup}[]\"",
+            "        >",
+            "        <label class=\"form-check-label\" for=\"${2:checkboxGroup}2\">${6:Option 2}</label>",
+            "      </div>",
+            "    </div>",
+            "    ",
+            "    <div class=\"col-md-4\">",
+            "      <div class=\"form-check\">",
+            "        <input ",
+            "          class=\"form-check-input\" ",
+            "          type=\"checkbox\" ",
+            "          value=\"${7:option3}\" ",
+            "          id=\"${2:checkboxGroup}3\"",
+            "          name=\"${2:checkboxGroup}[]\"",
+            "        >",
+            "        <label class=\"form-check-label\" for=\"${2:checkboxGroup}3\">${8:Option 3}</label>",
+            "      </div>",
+            "    </div>",
+            "    ",
+            "  </div>",
+            "  <div id=\"${2:checkboxGroup}Help\" class=\"form-text\">${9:Select all that apply}</div>",
+            "</fieldset>$0"
+        ],
+        "description": "☑️ Bootstrap 5 multi-select checkboxes - Professional checkbox group with proper fieldset, column layout, and accessibility."
+    },
+    
+    "Bootstrap 5 Rating Field": {
+        "prefix": ["bs5-rating", "star-rating"],
+        "body": [
+            "<!-- Star Rating Field -->",
+            "<fieldset class=\"mb-3\">",
+            "  <legend class=\"form-label\">${1:Rating}</legend>",
+            "  <div class=\"d-flex gap-1\" role=\"radiogroup\" aria-describedby=\"ratingHelp\">",
+            "    <input type=\"radio\" class=\"btn-check\" name=\"rating\" id=\"star1\" value=\"1\" autocomplete=\"off\">",
+            "    <label class=\"btn btn-outline-warning\" for=\"star1\" aria-label=\"1 star\">",
+            "      <i class=\"fas fa-star\"></i>",
+            "    </label>",
+            "    ",
+            "    <input type=\"radio\" class=\"btn-check\" name=\"rating\" id=\"star2\" value=\"2\" autocomplete=\"off\">",
+            "    <label class=\"btn btn-outline-warning\" for=\"star2\" aria-label=\"2 stars\">",
+            "      <i class=\"fas fa-star\"></i>",
+            "    </label>",
+            "    ",
+            "    <input type=\"radio\" class=\"btn-check\" name=\"rating\" id=\"star3\" value=\"3\" autocomplete=\"off\">",
+            "    <label class=\"btn btn-outline-warning\" for=\"star3\" aria-label=\"3 stars\">",
+            "      <i class=\"fas fa-star\"></i>",
+            "    </label>",
+            "    ",
+            "    <input type=\"radio\" class=\"btn-check\" name=\"rating\" id=\"star4\" value=\"4\" autocomplete=\"off\">",
+            "    <label class=\"btn btn-outline-warning\" for=\"star4\" aria-label=\"4 stars\">",
+            "      <i class=\"fas fa-star\"></i>",
+            "    </label>",
+            "    ",
+            "    <input type=\"radio\" class=\"btn-check\" name=\"rating\" id=\"star5\" value=\"5\" autocomplete=\"off\">",
+            "    <label class=\"btn btn-outline-warning\" for=\"star5\" aria-label=\"5 stars\">",
+            "      <i class=\"fas fa-star\"></i>",
+            "    </label>",
+            "  </div>",
+            "  <div id=\"ratingHelp\" class=\"form-text\">${2:Rate from 1 to 5 stars}</div>",
+            "  <div class=\"invalid-feedback\">Please provide a rating.</div>",
+            "</fieldset>$0"
+        ],
+        "description": "⭐ Bootstrap 5 star rating - Interactive star rating system with proper accessibility and button styling."
+    },
+    
+    "Bootstrap 5 Toggle Switch": {
+        "prefix": ["bs5-switch", "toggle"],
+        "body": [
+            "<div class=\"form-check form-switch mb-3\">",
+            "  <input ",
+            "    class=\"form-check-input\" ",
+            "    type=\"checkbox\" ",
+            "    role=\"switch\" ",
+            "    id=\"${1:switchId}\"",
+            "    name=\"${1:switchId}\"",
+            "    aria-describedby=\"${1:switchId}Help\"",
+            "    ${2|,checked|}",
+            "  >",
+            "  <label class=\"form-check-label\" for=\"${1:switchId}\">",
+            "    ${3:Enable notifications}",
+            "  </label>",
+            "  <div id=\"${1:switchId}Help\" class=\"form-text\">${4:Turn on to receive email notifications}</div>",
+            "</div>$0"
+        ],
+        "description": "🔄 Bootstrap 5 toggle switch - Modern toggle switch with proper switch role and accessibility features."
+    }
 }

@@ -1,0 +1,201 @@
+{
+  "Dropdown Basic": {
+    "prefix": "bs5-dropdown",
+    "body": [
+      "<div class=\"dropdown\">",
+      "  <button class=\"btn btn-${1|secondary,primary,success,danger,warning,info,light,dark|} dropdown-toggle\" type=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">",
+      "    ${2:Dropdown button}",
+      "  </button>",
+      "  <ul class=\"dropdown-menu\">",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${3:Action}</a></li>",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${4:Another action}</a></li>",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${5:Something else here}</a></li>",
+      "  </ul>",
+      "</div>"
+    ],
+    "description": "Basic dropdown component"
+  },
+  
+  "Dropdown Link": {
+    "prefix": "bs5-dropdown-link",
+    "body": [
+      "<div class=\"dropdown\">",
+      "  <a class=\"btn btn-${1|secondary,primary,success,danger,warning,info,light,dark|} dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">",
+      "    ${2:Dropdown link}",
+      "  </a>",
+      "  <ul class=\"dropdown-menu\">",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${3:Action}</a></li>",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${4:Another action}</a></li>",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${5:Something else here}</a></li>",
+      "  </ul>",
+      "</div>"
+    ],
+    "description": "Dropdown with link trigger"
+  },
+  
+  "Dropdown Split": {
+    "prefix": "bs5-dropdown-split",
+    "body": [
+      "<div class=\"btn-group\">",
+      "  <button type=\"button\" class=\"btn btn-${1|danger,primary,secondary,success,warning,info,light,dark|}\">${2:Action}</button>",
+      "  <button type=\"button\" class=\"btn btn-${1|danger,primary,secondary,success,warning,info,light,dark|} dropdown-toggle dropdown-toggle-split\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">",
+      "    <span class=\"visually-hidden\">Toggle Dropdown</span>",
+      "  </button>",
+      "  <ul class=\"dropdown-menu\">",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${3:Action}</a></li>",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${4:Another action}</a></li>",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${5:Something else here}</a></li>",
+      "    <li><hr class=\"dropdown-divider\"></li>",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${6:Separated link}</a></li>",
+      "  </ul>",
+      "</div>"
+    ],
+    "description": "Split button dropdown"
+  },
+  
+  "Dropdown Directions": {
+    "prefix": "bs5-dropdown-directions",
+    "body": [
+      "<!-- Dropup -->",
+      "<div class=\"btn-group dropup\">",
+      "  <button type=\"button\" class=\"btn btn-${1|secondary,primary,success,danger,warning,info,light,dark|} dropdown-toggle\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">",
+      "    ${2:Dropup}",
+      "  </button>",
+      "  <ul class=\"dropdown-menu\">",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${3:Action}</a></li>",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${4:Another action}</a></li>",
+      "  </ul>",
+      "</div>",
+      "",
+      "<!-- Dropend -->",
+      "<div class=\"btn-group dropend\">",
+      "  <button type=\"button\" class=\"btn btn-${5|secondary,primary,success,danger,warning,info,light,dark|} dropdown-toggle\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">",
+      "    ${6:Dropend}",
+      "  </button>",
+      "  <ul class=\"dropdown-menu\">",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${7:Action}</a></li>",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${8:Another action}</a></li>",
+      "  </ul>",
+      "</div>",
+      "",
+      "<!-- Dropstart -->",
+      "<div class=\"btn-group dropstart\">",
+      "  <button type=\"button\" class=\"btn btn-${9|secondary,primary,success,danger,warning,info,light,dark|} dropdown-toggle\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">",
+      "    ${10:Dropstart}",
+      "  </button>",
+      "  <ul class=\"dropdown-menu\">",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${11:Action}</a></li>",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${12:Another action}</a></li>",
+      "  </ul>",
+      "</div>"
+    ],
+    "description": "Dropdown with different directions (up, end, start)"
+  },
+  
+  "Dropdown Menu Items": {
+    "prefix": "bs5-dropdown-items",
+    "body": [
+      "<div class=\"dropdown\">",
+      "  <button class=\"btn btn-${1|secondary,primary,success,danger,warning,info,light,dark|} dropdown-toggle\" type=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">",
+      "    ${2:Dropdown}",
+      "  </button>",
+      "  <ul class=\"dropdown-menu\">",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${3:Regular link}</a></li>",
+      "    <li><a class=\"dropdown-item active\" href=\"#\" aria-current=\"true\">${4:Active link}</a></li>",
+      "    <li><a class=\"dropdown-item disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">${5:Disabled link}</a></li>",
+      "    <li><hr class=\"dropdown-divider\"></li>",
+      "    <li><h6 class=\"dropdown-header\">${6:Dropdown header}</h6></li>",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${7:Separated link}</a></li>",
+      "    <li><span class=\"dropdown-item-text\">${8:Text item}</span></li>",
+      "  </ul>",
+      "</div>"
+    ],
+    "description": "Dropdown with various menu item types"
+  },
+  
+  "Dropdown Auto Close": {
+    "prefix": "bs5-dropdown-autoclose",
+    "body": [
+      "<div class=\"btn-group\">",
+      "  <button class=\"btn btn-${1|secondary,primary,success,danger,warning,info,light,dark|} dropdown-toggle\" type=\"button\" data-bs-toggle=\"dropdown\" data-bs-auto-close=\"${2|true,false,inside,outside|}\" aria-expanded=\"false\">",
+      "    ${3:Default dropdown}",
+      "  </button>",
+      "  <ul class=\"dropdown-menu\">",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${4:Menu item}</a></li>",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${5:Menu item}</a></li>",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${6:Menu item}</a></li>",
+      "  </ul>",
+      "</div>"
+    ],
+    "description": "Dropdown with auto-close behavior options"
+  },
+  
+  "Dropdown Forms": {
+    "prefix": "bs5-dropdown-form",
+    "body": [
+      "<div class=\"dropdown\">",
+      "  <button class=\"btn btn-${1|secondary,primary,success,danger,warning,info,light,dark|} dropdown-toggle\" type=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">",
+      "    ${2:Dropdown form}",
+      "  </button>",
+      "  <div class=\"dropdown-menu p-4\" style=\"max-width: ${3:300px};\">",
+      "    <form>",
+      "      <div class=\"mb-3\">",
+      "        <label for=\"${4:exampleDropdownFormEmail}\" class=\"form-label\">${5:Email address}</label>",
+      "        <input type=\"email\" class=\"form-control\" id=\"${4:exampleDropdownFormEmail}\" placeholder=\"${6:email@example.com}\">",
+      "      </div>",
+      "      <div class=\"mb-3\">",
+      "        <label for=\"${7:exampleDropdownFormPassword}\" class=\"form-label\">${8:Password}</label>",
+      "        <input type=\"password\" class=\"form-control\" id=\"${7:exampleDropdownFormPassword}\" placeholder=\"${9:Password}\">",
+      "      </div>",
+      "      <div class=\"mb-3\">",
+      "        <div class=\"form-check\">",
+      "          <input type=\"checkbox\" class=\"form-check-input\" id=\"${10:dropdownCheck}\">",
+      "          <label class=\"form-check-label\" for=\"${10:dropdownCheck}\">",
+      "            ${11:Remember me}",
+      "          </label>",
+      "        </div>",
+      "      </div>",
+      "      <button type=\"submit\" class=\"btn btn-primary\">${12:Sign in}</button>",
+      "    </form>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Dropdown containing a form"
+  },
+  
+  "Dropdown Dark": {
+    "prefix": "bs5-dropdown-dark",
+    "body": [
+      "<div class=\"dropdown\">",
+      "  <button class=\"btn btn-${1|secondary,primary,success,danger,warning,info,light,dark|} dropdown-toggle\" type=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">",
+      "    ${2:Dropdown button}",
+      "  </button>",
+      "  <ul class=\"dropdown-menu dropdown-menu-dark\">",
+      "    <li><a class=\"dropdown-item active\" href=\"#\" aria-current=\"true\">${3:Action}</a></li>",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${4:Another action}</a></li>",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${5:Something else here}</a></li>",
+      "    <li><hr class=\"dropdown-divider\"></li>",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${6:Separated link}</a></li>",
+      "  </ul>",
+      "</div>"
+    ],
+    "description": "Dark theme dropdown menu"
+  },
+  
+  "Dropdown Alignment": {
+    "prefix": "bs5-dropdown-align",
+    "body": [
+      "<div class=\"btn-group\">",
+      "  <button type=\"button\" class=\"btn btn-${1|secondary,primary,success,danger,warning,info,light,dark|} dropdown-toggle\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">",
+      "    ${2:Right-aligned menu}",
+      "  </button>",
+      "  <ul class=\"dropdown-menu dropdown-menu-${3|end,start|}\">",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${4:Action}</a></li>",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${5:Another action}</a></li>",
+      "    <li><a class=\"dropdown-item\" href=\"#\">${6:Something else here}</a></li>",
+      "  </ul>",
+      "</div>"
+    ],
+    "description": "Dropdown with alignment options"
+  }
+}

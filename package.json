@@ -1,22 +1,201 @@
 {
     "name": "bootstrap5snippets",
-    "displayName": "Bootstrap 5",
+      "displayName": "Bootstrap 5 Pro Snippets – Accessibility First", 
     "description": "One Extension for all Bootstrap 5 snippets",
-    "version": "1.7.0",
+    "version": "2.1.1",
     "publisher": "Nishikanta12",
+    "license": "MIT",
     "engines": {
         "vscode": "^1.57.0"
     },
     "categories": [
-        "Snippets"
+        "Snippets",
+        "Other"
     ],
+    "activationEvents": [
+        "onLanguage:html",
+        "onLanguage:vue",
+        "onLanguage:javascript",
+        "onLanguage:typescript",
+        "onLanguage:javascriptreact",
+        "onLanguage:typescriptreact",
+        "onLanguage:vue-html",
+        "onLanguage:svelte",
+        "onLanguage:php"
+    ],
+    "main": "./extension.js",
+    "galleryBanner": {
+        "color": "#7952b3",
+        "theme": "dark"
+    },
+    "keywords": [
+        "bootstrap",
+        "bootstrap5",
+        "bootstrap5.3",
+        "css",
+        "html",
+        "snippets",
+        "framework",
+        "components",
+        "utilities",
+        "responsive",
+        "accessibility",
+        "a11y",
+        "aria",
+        "wcag",
+        "screen-reader",
+        "keyboard-navigation",
+        "focus-management",
+        "semantic-html",
+        "fontawesome",
+        "vue",
+        "angular",
+        "svelte",
+        "php",
+        "multi-language",
+        "professional",
+        "modern",
+        "ux",
+        "ui-components",
+        "web-standards",
+        "inclusive-design"
+    ],
+    "homepage": "https://github.com/NishikantaRay/Vs-code-extension-for-Bootstrap5#readme",
+    "bugs": {
+        "url": "https://github.com/NishikantaRay/Vs-code-extension-for-Bootstrap5/issues"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/NishikantaRay/Vs-code-extension-for-Bootstrap5"
     },
     "icon": "icon.png",
+    "scripts": {
+        "test": "node ./test/runTests.js",
+        "validate": "node ./test/validateSnippets.js",
+        "lint": "node ./test/lintSnippets.js",
+        "prepack": "npm run validate",
+        "package": "vsce package",
+        "publish:vscode": "vsce publish",
+        "publish:ovsx": "ovsx publish",
+        "publish:all": "./publish.sh",
+        "version:patch": "npm version patch && npm run package",
+        "version:minor": "npm version minor && npm run package",
+        "version:major": "npm version major && npm run package"
+    },
+    "devDependencies": {
+        "glob": "^10.3.10",
+        "chalk": "^4.1.2"
+    },
     "contributes": {
+        "commands": [
+            {
+                "command": "bootstrap5snippets.showInfo",
+                "title": "Show Bootstrap 5 Snippets Info",
+                "category": "Bootstrap 5"
+            },
+            {
+                "command": "bootstrap5snippets.showShortcuts",
+                "title": "Show Bootstrap 5 Keyboard Shortcuts",
+                "category": "Bootstrap 5"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "editor.action.insertSnippet",
+                "key": "ctrl+shift+b ctrl+shift+c",
+                "mac": "cmd+shift+b cmd+shift+c",
+                "when": "editorTextFocus",
+                "args": {
+                    "snippet": "<div class=\"container\">\n\t$0\n</div>"
+                }
+            },
+            {
+                "command": "editor.action.insertSnippet",
+                "key": "ctrl+shift+b ctrl+shift+r",
+                "mac": "cmd+shift+b cmd+shift+r",
+                "when": "editorTextFocus",
+                "args": {
+                    "snippet": "<div class=\"row\">\n\t$0\n</div>"
+                }
+            },
+            {
+                "command": "editor.action.insertSnippet",
+                "key": "ctrl+shift+b ctrl+shift+g",
+                "mac": "cmd+shift+b cmd+shift+g",
+                "when": "editorTextFocus",
+                "args": {
+                    "snippet": "<div class=\"col-${1:md}-${2:6}\">\n\t$0\n</div>"
+                }
+            },
+            {
+                "command": "editor.action.insertSnippet",
+                "key": "ctrl+shift+b ctrl+shift+n",
+                "mac": "cmd+shift+b cmd+shift+n",
+                "when": "editorTextFocus",
+                "args": {
+                    "snippet": "<nav class=\"navbar navbar-expand-${1:lg} navbar-${2:light} bg-${2:light}\">\n\t<div class=\"container${3:-fluid}\">\n\t\t<a class=\"navbar-brand\" href=\"#\">${4:Brand}</a>\n\t\t<button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n\t\t\t<span class=\"navbar-toggler-icon\"></span>\n\t\t</button>\n\t\t<div class=\"collapse navbar-collapse\" id=\"navbarNav\">\n\t\t\t<ul class=\"navbar-nav\">\n\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t<a class=\"nav-link active\" aria-current=\"page\" href=\"#\">Home</a>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t<a class=\"nav-link\" href=\"#\">Link</a>\n\t\t\t\t</li>\n\t\t\t</ul>\n\t\t</div>\n\t</div>\n</nav>"
+                }
+            },
+            {
+                "command": "editor.action.insertSnippet",
+                "key": "ctrl+shift+b ctrl+shift+m",
+                "mac": "cmd+shift+b cmd+shift+m",
+                "when": "editorTextFocus",
+                "args": {
+                    "snippet": "<button type=\"button\" class=\"btn btn-${1:primary}\" data-bs-toggle=\"modal\" data-bs-target=\"#${2:exampleModal}\">\n\t${3:Launch modal}\n</button>\n\n<div class=\"modal fade\" id=\"${2:exampleModal}\" tabindex=\"-1\" aria-labelledby=\"${2:exampleModal}Label\" aria-hidden=\"true\">\n\t<div class=\"modal-dialog\">\n\t\t<div class=\"modal-content\">\n\t\t\t<div class=\"modal-header\">\n\t\t\t\t<h1 class=\"modal-title fs-5\" id=\"${2:exampleModal}Label\">${4:Modal title}</h1>\n\t\t\t\t<button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>\n\t\t\t</div>\n\t\t\t<div class=\"modal-body\">\n\t\t\t\t$0\n\t\t\t</div>\n\t\t\t<div class=\"modal-footer\">\n\t\t\t\t<button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">Close</button>\n\t\t\t\t<button type=\"button\" class=\"btn btn-primary\">Save changes</button>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>"
+                }
+            },
+            {
+                "command": "editor.action.insertSnippet",
+                "key": "ctrl+shift+b ctrl+shift+f",
+                "mac": "cmd+shift+b cmd+shift+f",
+                "when": "editorTextFocus",
+                "args": {
+                    "snippet": "<form>\n\t<div class=\"mb-3\">\n\t\t<label for=\"${1:email}\" class=\"form-label\">${2:Email address}</label>\n\t\t<input type=\"${3:email}\" class=\"form-control\" id=\"${1:email}\" aria-describedby=\"${1:email}Help\">\n\t\t<div id=\"${1:email}Help\" class=\"form-text\">${4:Help text}</div>\n\t</div>\n\t<button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n</form>"
+                }
+            },
+            {
+                "command": "editor.action.insertSnippet",
+                "key": "ctrl+shift+b ctrl+shift+a",
+                "mac": "cmd+shift+b cmd+shift+a",
+                "when": "editorTextFocus",
+                "args": {
+                    "snippet": "<div class=\"alert alert-${1:primary} alert-dismissible fade show\" role=\"alert\">\n\t${2:Alert message}\n\t<button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\"></button>\n</div>"
+                }
+            },
+            {
+                "command": "editor.action.insertSnippet",
+                "key": "ctrl+shift+b ctrl+shift+k",
+                "mac": "cmd+shift+b cmd+shift+k",
+                "when": "editorTextFocus",
+                "args": {
+                    "snippet": "<div class=\"card\" style=\"width: 18rem;\">\n\t<img src=\"${1:...}\" class=\"card-img-top\" alt=\"${2:...}\">\n\t<div class=\"card-body\">\n\t\t<h5 class=\"card-title\">${3:Card title}</h5>\n\t\t<p class=\"card-text\">${4:Card text}</p>\n\t\t<a href=\"#\" class=\"btn btn-${5:primary}\">${6:Go somewhere}</a>\n\t</div>\n</div>"
+                }
+            },
+            {
+                "command": "editor.action.insertSnippet",
+                "key": "ctrl+shift+b ctrl+shift+t",
+                "mac": "cmd+shift+b cmd+shift+t",
+                "when": "editorTextFocus",
+                "args": {
+                    "snippet": "<table class=\"table\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th scope=\"col\">#</th>\n\t\t\t<th scope=\"col\">${1:First}</th>\n\t\t\t<th scope=\"col\">${2:Last}</th>\n\t\t\t<th scope=\"col\">${3:Handle}</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<th scope=\"row\">1</th>\n\t\t\t<td>${4:Mark}</td>\n\t\t\t<td>${5:Otto}</td>\n\t\t\t<td>${6:@mdo}</td>\n\t\t</tr>\n\t\t$0\n\t</tbody>\n</table>"
+                }
+            },
+            {
+                "command": "editor.action.insertSnippet",
+                "key": "ctrl+shift+b ctrl+shift+d",
+                "mac": "cmd+shift+b cmd+shift+d",
+                "when": "editorTextFocus",
+                "args": {
+                    "snippet": "<div class=\"dropdown\">\n\t<button class=\"btn btn-${1:secondary} dropdown-toggle\" type=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n\t\t${2:Dropdown button}\n\t</button>\n\t<ul class=\"dropdown-menu\">\n\t\t<li><a class=\"dropdown-item\" href=\"#\">${3:Action}</a></li>\n\t\t<li><a class=\"dropdown-item\" href=\"#\">${4:Another action}</a></li>\n\t\t<li><a class=\"dropdown-item\" href=\"#\">${5:Something else here}</a></li>\n\t</ul>\n</div>"
+                }
+            }
+        ],
         "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/accessibility.code-snippets"
+            },
             {
                 "language": "html",
                 "path": "./snippets/snippets.code-snippets"
@@ -27,7 +206,7 @@
             },
             {
                 "language": "html",
-                "path": "./snippets/Accordian.code-snippets"
+                "path": "./snippets/Accordion.code-snippets"
             },
             {
                 "language": "html",
@@ -47,7 +226,7 @@
             },
             {
                 "language": "html",
-                "path": "./snippets/figur.code-snippets"
+                "path": "./snippets/Figure.code-snippets"
             },
             {
                 "language": "html",
@@ -92,6 +271,102 @@
             {
                 "language": "html",
                 "path": "./snippets/sass.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/utilities.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/bootstrap5-3.code-snippets"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/javascript.code-snippets"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/offcanvas.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/toast.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/placeholder.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/spinner.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/progress.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/alert.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/badge.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/listgroup.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/dropdown.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/tabs.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/tooltip.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/popover.code-snippets"
+            },
+            {
+                "language": "vue",
+                "path": "./snippets/vue.code-snippets"
+            },
+            {
+                "language": "vue-html",
+                "path": "./snippets/vue.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/angular.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/angular.code-snippets"
+            },
+            {
+                "language": "svelte",
+                "path": "./snippets/svelte.code-snippets"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/php.code-snippets"
             }
         ]
     }

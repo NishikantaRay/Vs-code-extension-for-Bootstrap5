@@ -1,0 +1,144 @@
+{
+  "Progress Basic": {
+    "prefix": "bs5-progress",
+    "body": [
+      "<div class=\"progress\" role=\"progressbar\" aria-label=\"${1:Basic example}\" aria-valuenow=\"${2:25}\" aria-valuemin=\"0\" aria-valuemax=\"100\">",
+      "  <div class=\"progress-bar\" style=\"width: ${2:25}%\"></div>",
+      "</div>"
+    ],
+    "description": "Basic progress bar with ARIA attributes"
+  },
+  
+  "Progress with Label": {
+    "prefix": "bs5-progress-label",
+    "body": [
+      "<div class=\"progress\" role=\"progressbar\" aria-label=\"${1:Example with label}\" aria-valuenow=\"${2:25}\" aria-valuemin=\"0\" aria-valuemax=\"100\">",
+      "  <div class=\"progress-bar\" style=\"width: ${2:25}%\">${2:25}%</div>",
+      "</div>"
+    ],
+    "description": "Progress bar with percentage label"
+  },
+  
+  "Progress Heights": {
+    "prefix": "bs5-progress-height",
+    "body": [
+      "<div class=\"progress\" style=\"height: ${1:1px};\" role=\"progressbar\" aria-label=\"${2:Example 1px high}\" aria-valuenow=\"${3:25}\" aria-valuemin=\"0\" aria-valuemax=\"100\">",
+      "  <div class=\"progress-bar\" style=\"width: ${3:25}%\"></div>",
+      "</div>",
+      "<div class=\"progress\" style=\"height: ${4:20px};\" role=\"progressbar\" aria-label=\"${5:Example 20px high}\" aria-valuenow=\"${6:25}\" aria-valuemin=\"0\" aria-valuemax=\"100\">",
+      "  <div class=\"progress-bar\" style=\"width: ${6:25}%\"></div>",
+      "</div>"
+    ],
+    "description": "Progress bars with custom heights"
+  },
+  
+  "Progress Colors": {
+    "prefix": "bs5-progress-colors",
+    "body": [
+      "<div class=\"progress\" role=\"progressbar\" aria-label=\"${1:Success example}\" aria-valuenow=\"${2:25}\" aria-valuemin=\"0\" aria-valuemax=\"100\">",
+      "  <div class=\"progress-bar bg-${3|success,info,warning,danger|}\" style=\"width: ${2:25}%\"></div>",
+      "</div>"
+    ],
+    "description": "Progress bar with Bootstrap color variations"
+  },
+  
+  "Progress Multiple": {
+    "prefix": "bs5-progress-multiple",
+    "body": [
+      "<div class=\"progress-stacked\">",
+      "  <div class=\"progress\" role=\"progressbar\" aria-label=\"${1:Segment one}\" aria-valuenow=\"${2:15}\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: ${2:15}%\">",
+      "    <div class=\"progress-bar\"></div>",
+      "  </div>",
+      "  <div class=\"progress\" role=\"progressbar\" aria-label=\"${3:Segment two}\" aria-valuenow=\"${4:30}\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: ${4:30}%\">",
+      "    <div class=\"progress-bar bg-success\"></div>",
+      "  </div>",
+      "  <div class=\"progress\" role=\"progressbar\" aria-label=\"${5:Segment three}\" aria-valuenow=\"${6:20}\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: ${6:20}%\">",
+      "    <div class=\"progress-bar bg-info\"></div>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Multiple stacked progress bars"
+  },
+  
+  "Progress Striped": {
+    "prefix": "bs5-progress-striped",
+    "body": [
+      "<div class=\"progress\" role=\"progressbar\" aria-label=\"${1:Default striped example}\" aria-valuenow=\"${2:10}\" aria-valuemin=\"0\" aria-valuemax=\"100\">",
+      "  <div class=\"progress-bar progress-bar-striped\" style=\"width: ${2:10}%\"></div>",
+      "</div>",
+      "<div class=\"progress\" role=\"progressbar\" aria-label=\"${3:Success striped example}\" aria-valuenow=\"${4:25}\" aria-valuemin=\"0\" aria-valuemax=\"100\">",
+      "  <div class=\"progress-bar progress-bar-striped bg-success\" style=\"width: ${4:25}%\"></div>",
+      "</div>"
+    ],
+    "description": "Striped progress bars"
+  },
+  
+  "Progress Animated": {
+    "prefix": "bs5-progress-animated",
+    "body": [
+      "<div class=\"progress\" role=\"progressbar\" aria-label=\"${1:Animated striped example}\" aria-valuenow=\"${2:75}\" aria-valuemin=\"0\" aria-valuemax=\"100\">",
+      "  <div class=\"progress-bar progress-bar-striped progress-bar-animated\" style=\"width: ${2:75}%\"></div>",
+      "</div>"
+    ],
+    "description": "Animated striped progress bar"
+  },
+  
+  "Progress with Steps": {
+    "prefix": "bs5-progress-steps",
+    "body": [
+      "<div class=\"d-flex justify-content-between mb-2\">",
+      "  <span class=\"badge bg-${1|primary,secondary,success,danger,warning,info,light,dark|}\">${2:Step 1}</span>",
+      "  <span class=\"badge bg-${3|primary,secondary,success,danger,warning,info,light,dark|}\">${4:Step 2}</span>",
+      "  <span class=\"badge bg-${5|secondary,primary,success,danger,warning,info,light,dark|}\">${6:Step 3}</span>",
+      "  <span class=\"badge bg-${7|secondary,primary,success,danger,warning,info,light,dark|}\">${8:Step 4}</span>",
+      "</div>",
+      "<div class=\"progress\" role=\"progressbar\" aria-label=\"${9:Step progress}\" aria-valuenow=\"${10:50}\" aria-valuemin=\"0\" aria-valuemax=\"100\">",
+      "  <div class=\"progress-bar\" style=\"width: ${10:50}%\">${11:Step 2 of 4}</div>",
+      "</div>"
+    ],
+    "description": "Progress bar with step indicators"
+  },
+  
+  "Progress Circle": {
+    "prefix": "bs5-progress-circle",
+    "body": [
+      "<div class=\"position-relative d-inline-flex align-items-center justify-content-center\" style=\"width: ${1:120px}; height: ${2:120px};\">",
+      "  <svg class=\"position-absolute\" width=\"${1:120}\" height=\"${2:120}\" viewBox=\"0 0 ${1:120} ${2:120}\">",
+      "    <circle cx=\"${3:60}\" cy=\"${4:60}\" r=\"${5:54}\" fill=\"none\" stroke=\"#e9ecef\" stroke-width=\"${6:12}\"/>",
+      "    <circle cx=\"${3:60}\" cy=\"${4:60}\" r=\"${5:54}\" fill=\"none\" stroke=\"#0d6efd\" stroke-width=\"${6:12}\" stroke-dasharray=\"${7:339.29}\" stroke-dashoffset=\"${8:84.82}\" stroke-linecap=\"round\" transform=\"rotate(-90 ${3:60} ${4:60})\"/>",
+      "  </svg>",
+      "  <div class=\"position-absolute text-center\">",
+      "    <div class=\"fw-bold\">${9:75%}</div>",
+      "    <small class=\"text-muted\">${10:Complete}</small>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Circular progress indicator using SVG"
+  },
+  
+  "Progress with JavaScript": {
+    "prefix": "bs5-progress-js",
+    "body": [
+      "<div class=\"mb-3\">",
+      "  <label for=\"${1:progressRange}\" class=\"form-label\">${2:Progress Control}</label>",
+      "  <input type=\"range\" class=\"form-range\" min=\"0\" max=\"100\" value=\"${3:50}\" id=\"${1:progressRange}\">",
+      "</div>",
+      "<div class=\"progress\" role=\"progressbar\" aria-label=\"${4:Dynamic progress}\" aria-valuenow=\"${3:50}\" aria-valuemin=\"0\" aria-valuemax=\"100\">",
+      "  <div class=\"progress-bar\" id=\"${5:dynamicProgress}\" style=\"width: ${3:50}%\">${3:50}%</div>",
+      "</div>",
+      "",
+      "<script>",
+      "document.getElementById('${1:progressRange}').addEventListener('input', function(e) {",
+      "  const value = e.target.value;",
+      "  const progressBar = document.getElementById('${5:dynamicProgress}');",
+      "  const progress = progressBar.closest('.progress');",
+      "  ",
+      "  progressBar.style.width = value + '%';",
+      "  progressBar.textContent = value + '%';",
+      "  progress.setAttribute('aria-valuenow', value);",
+      "});",
+      "</script>"
+    ],
+    "description": "Interactive progress bar with JavaScript control"
+  }
+}

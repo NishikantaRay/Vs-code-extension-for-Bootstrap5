@@ -1,0 +1,181 @@
+{
+  "List Group Basic": {
+    "prefix": "bs5-list-group",
+    "body": [
+      "<ul class=\"list-group\">",
+      "  <li class=\"list-group-item\">${1:An item}</li>",
+      "  <li class=\"list-group-item\">${2:A second item}</li>",
+      "  <li class=\"list-group-item\">${3:A third item}</li>",
+      "  <li class=\"list-group-item\">${4:A fourth item}</li>",
+      "  <li class=\"list-group-item\">${5:And a fifth one}</li>",
+      "</ul>"
+    ],
+    "description": "Basic list group component"
+  },
+  
+  "List Group Active": {
+    "prefix": "bs5-list-group-active",
+    "body": [
+      "<ul class=\"list-group\">",
+      "  <li class=\"list-group-item active\" aria-current=\"true\">${1:An active item}</li>",
+      "  <li class=\"list-group-item\">${2:A second item}</li>",
+      "  <li class=\"list-group-item\">${3:A third item}</li>",
+      "  <li class=\"list-group-item\">${4:A fourth item}</li>",
+      "  <li class=\"list-group-item disabled\" aria-disabled=\"true\">${5:A disabled item}</li>",
+      "</ul>"
+    ],
+    "description": "List group with active and disabled items"
+  },
+  
+  "List Group Links": {
+    "prefix": "bs5-list-group-links",
+    "body": [
+      "<div class=\"list-group\">",
+      "  <a href=\"#\" class=\"list-group-item list-group-item-action active\" aria-current=\"true\">",
+      "    ${1:The current link item}",
+      "  </a>",
+      "  <a href=\"#\" class=\"list-group-item list-group-item-action\">${2:A second link item}</a>",
+      "  <a href=\"#\" class=\"list-group-item list-group-item-action\">${3:A third link item}</a>",
+      "  <a href=\"#\" class=\"list-group-item list-group-item-action\">${4:A fourth link item}</a>",
+      "  <a class=\"list-group-item list-group-item-action disabled\" tabindex=\"-1\" aria-disabled=\"true\">${5:A disabled link item}</a>",
+      "</div>"
+    ],
+    "description": "List group with clickable links"
+  },
+  
+  "List Group Buttons": {
+    "prefix": "bs5-list-group-buttons",
+    "body": [
+      "<div class=\"list-group\">",
+      "  <button type=\"button\" class=\"list-group-item list-group-item-action active\" aria-current=\"true\">",
+      "    ${1:The current button}",
+      "  </button>",
+      "  <button type=\"button\" class=\"list-group-item list-group-item-action\">${2:A second button item}</button>",
+      "  <button type=\"button\" class=\"list-group-item list-group-item-action\">${3:A third button item}</button>",
+      "  <button type=\"button\" class=\"list-group-item list-group-item-action\">${4:A fourth button item}</button>",
+      "  <button type=\"button\" class=\"list-group-item list-group-item-action\" disabled>${5:A disabled button item}</button>",
+      "</div>"
+    ],
+    "description": "List group with button elements"
+  },
+  
+  "List Group Flush": {
+    "prefix": "bs5-list-group-flush",
+    "body": [
+      "<ul class=\"list-group list-group-flush\">",
+      "  <li class=\"list-group-item\">${1:An item}</li>",
+      "  <li class=\"list-group-item\">${2:A second item}</li>",
+      "  <li class=\"list-group-item\">${3:A third item}</li>",
+      "  <li class=\"list-group-item\">${4:A fourth item}</li>",
+      "  <li class=\"list-group-item\">${5:And a fifth one}</li>",
+      "</ul>"
+    ],
+    "description": "Flush list group without borders"
+  },
+  
+  "List Group Numbered": {
+    "prefix": "bs5-list-group-numbered",
+    "body": [
+      "<ol class=\"list-group list-group-numbered\">",
+      "  <li class=\"list-group-item d-flex justify-content-between align-items-start\">",
+      "    <div class=\"ms-2 me-auto\">",
+      "      <div class=\"fw-bold\">${1:Subheading}</div>",
+      "      ${2:Content for list item}",
+      "    </div>",
+      "    <span class=\"badge bg-primary rounded-pill\">${3:14}</span>",
+      "  </li>",
+      "  <li class=\"list-group-item d-flex justify-content-between align-items-start\">",
+      "    <div class=\"ms-2 me-auto\">",
+      "      <div class=\"fw-bold\">${4:Subheading}</div>",
+      "      ${5:Content for list item}",
+      "    </div>",
+      "    <span class=\"badge bg-primary rounded-pill\">${6:32}</span>",
+      "  </li>",
+      "  <li class=\"list-group-item d-flex justify-content-between align-items-start\">",
+      "    <div class=\"ms-2 me-auto\">",
+      "      <div class=\"fw-bold\">${7:Subheading}</div>",
+      "      ${8:Content for list item}",
+      "    </div>",
+      "    <span class=\"badge bg-primary rounded-pill\">${9:7}</span>",
+      "  </li>",
+      "</ol>"
+    ],
+    "description": "Numbered list group with badges"
+  },
+  
+  "List Group Horizontal": {
+    "prefix": "bs5-list-group-horizontal",
+    "body": [
+      "<ul class=\"list-group list-group-horizontal${1|-sm,-md,-lg,-xl,-xxl|}\">",
+      "  <li class=\"list-group-item\">${2:An item}</li>",
+      "  <li class=\"list-group-item\">${3:A second item}</li>",
+      "  <li class=\"list-group-item\">${4:A third item}</li>",
+      "</ul>"
+    ],
+    "description": "Horizontal list group with breakpoint options"
+  },
+  
+  "List Group Contextual": {
+    "prefix": "bs5-list-group-contextual",
+    "body": [
+      "<ul class=\"list-group\">",
+      "  <li class=\"list-group-item\">${1:A simple default list group item}</li>",
+      "  <li class=\"list-group-item list-group-item-primary\">${2:A simple primary list group item}</li>",
+      "  <li class=\"list-group-item list-group-item-secondary\">${3:A simple secondary list group item}</li>",
+      "  <li class=\"list-group-item list-group-item-success\">${4:A simple success list group item}</li>",
+      "  <li class=\"list-group-item list-group-item-danger\">${5:A simple danger list group item}</li>",
+      "  <li class=\"list-group-item list-group-item-warning\">${6:A simple warning list group item}</li>",
+      "  <li class=\"list-group-item list-group-item-info\">${7:A simple info list group item}</li>",
+      "  <li class=\"list-group-item list-group-item-light\">${8:A simple light list group item}</li>",
+      "  <li class=\"list-group-item list-group-item-dark\">${9:A simple dark list group item}</li>",
+      "</ul>"
+    ],
+    "description": "List group with contextual colors"
+  },
+  
+  "List Group with Badges": {
+    "prefix": "bs5-list-group-badges",
+    "body": [
+      "<ul class=\"list-group\">",
+      "  <li class=\"list-group-item d-flex justify-content-between align-items-center\">",
+      "    ${1:Content}",
+      "    <span class=\"badge bg-primary rounded-pill\">${2:14}</span>",
+      "  </li>",
+      "  <li class=\"list-group-item d-flex justify-content-between align-items-center\">",
+      "    ${3:Content}",
+      "    <span class=\"badge bg-primary rounded-pill\">${4:2}</span>",
+      "  </li>",
+      "  <li class=\"list-group-item d-flex justify-content-between align-items-center\">",
+      "    ${5:Content}",
+      "    <span class=\"badge bg-primary rounded-pill\">${6:1}</span>",
+      "  </li>",
+      "</ul>"
+    ],
+    "description": "List group items with badges"
+  },
+  
+  "List Group Custom Content": {
+    "prefix": "bs5-list-group-custom",
+    "body": [
+      "<div class=\"list-group\">",
+      "  <a href=\"#\" class=\"list-group-item list-group-item-action active\" aria-current=\"true\">",
+      "    <div class=\"d-flex w-100 justify-content-between\">",
+      "      <h5 class=\"mb-1\">${1:List group item heading}</h5>",
+      "      <small>${2:3 days ago}</small>",
+      "    </div>",
+      "    <p class=\"mb-1\">${3:Some placeholder content in a paragraph.}</p>",
+      "    <small>${4:And some small print.}</small>",
+      "  </a>",
+      "  <a href=\"#\" class=\"list-group-item list-group-item-action\">",
+      "    <div class=\"d-flex w-100 justify-content-between\">",
+      "      <h5 class=\"mb-1\">${5:List group item heading}</h5>",
+      "      <small class=\"text-muted\">${6:3 days ago}</small>",
+      "    </div>",
+      "    <p class=\"mb-1\">${7:Some placeholder content in a paragraph.}</p>",
+      "    <small class=\"text-muted\">${8:And some muted small print.}</small>",
+      "  </a>",
+      "</div>"
+    ],
+    "description": "List group with custom content including headings and text"
+  }
+}

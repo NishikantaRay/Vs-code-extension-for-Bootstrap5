@@ -1,0 +1,47 @@
+{
+  "🏗️ Container - Default": {
+    "prefix": ["bs5-container", "container", "b5-container"],
+    "body": [
+      "<div class=\"container\">",
+      "  $0",
+      "</div>"
+    ],
+    "description": "📦 Bootstrap 5 default container with responsive breakpoints"
+  },
+  "🏗️ Container - Fluid": {
+    "prefix": ["bs5-container-fluid", "container-fluid", "b5-container-fluid"],
+    "body": [
+      "<div class=\"container-fluid\">",
+      "  $0",
+      "</div>"
+    ],
+    "description": "📦 Bootstrap 5 fluid container spanning full viewport width"
+  },
+  "📱 Row": {
+    "prefix": ["bs5-row", "row", "b5-row"],
+    "body": [
+      "<div class=\"row\">",
+      "  $0",
+      "</div>"
+    ],
+    "description": "📏 Bootstrap 5 responsive row for grid system"
+  },
+  "📏 Column": {
+    "prefix": ["bs5-col", "col", "b5-col"],
+    "body": [
+      "<div class=\"col-${1:md}-${2:6}\">",
+      "  $0",
+      "</div>"
+    ],
+    "description": "📊 Bootstrap 5 responsive column with customizable breakpoint and size"
+  },
+  "🎯 Aspect Ratio": {
+    "prefix": ["bs5-ratio", "ratio", "b5-ratio"],
+    "body": [
+      "<div class=\"ratio ratio-${1:16x9}\">",
+      "  ${2:<iframe src=\"...\" title=\"${3:Content}\" allowfullscreen></iframe>}",
+      "</div>"
+    ],
+    "description": "📺 Bootstrap 5 responsive aspect ratio container for media content"
+  }
+}

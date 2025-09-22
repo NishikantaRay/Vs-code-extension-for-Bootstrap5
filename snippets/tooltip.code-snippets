@@ -1,0 +1,139 @@
+{
+  "Tooltip Basic": {
+    "prefix": "bs5-tooltip",
+    "body": [
+      "<button type=\"button\" class=\"btn btn-${1|secondary,primary,success,danger,warning,info,light,dark|}\" data-bs-toggle=\"tooltip\" data-bs-placement=\"${2|top,bottom,left,right|}\" data-bs-title=\"${3:Tooltip on top}\">",
+      "  ${4:Tooltip on top}",
+      "</button>"
+    ],
+    "description": "Basic tooltip with placement options"
+  },
+  
+  "Tooltip All Directions": {
+    "prefix": "bs5-tooltip-directions",
+    "body": [
+      "<button type=\"button\" class=\"btn btn-${1|secondary,primary,success,danger,warning,info,light,dark|}\" data-bs-toggle=\"tooltip\" data-bs-placement=\"top\" data-bs-title=\"${2:Tooltip on top}\">",
+      "  ${3:Tooltip on top}",
+      "</button>",
+      "<button type=\"button\" class=\"btn btn-${4|secondary,primary,success,danger,warning,info,light,dark|}\" data-bs-toggle=\"tooltip\" data-bs-placement=\"right\" data-bs-title=\"${5:Tooltip on right}\">",
+      "  ${6:Tooltip on right}",
+      "</button>",
+      "<button type=\"button\" class=\"btn btn-${7|secondary,primary,success,danger,warning,info,light,dark|}\" data-bs-toggle=\"tooltip\" data-bs-placement=\"bottom\" data-bs-title=\"${8:Tooltip on bottom}\">",
+      "  ${9:Tooltip on bottom}",
+      "</button>",
+      "<button type=\"button\" class=\"btn btn-${10|secondary,primary,success,danger,warning,info,light,dark|}\" data-bs-toggle=\"tooltip\" data-bs-placement=\"left\" data-bs-title=\"${11:Tooltip on left}\">",
+      "  ${12:Tooltip on left}",
+      "</button>"
+    ],
+    "description": "Tooltips for all four directions"
+  },
+  
+  "Tooltip with HTML": {
+    "prefix": "bs5-tooltip-html",
+    "body": [
+      "<button type=\"button\" class=\"btn btn-${1|secondary,primary,success,danger,warning,info,light,dark|}\" data-bs-toggle=\"tooltip\" data-bs-html=\"true\" data-bs-title=\"<em>${2:Tooltip}</em> <u>${3:with}</u> <b>${4:HTML}</b>\">",
+      "  ${5:Tooltip with HTML}",
+      "</button>"
+    ],
+    "description": "Tooltip with HTML content"
+  },
+  
+  "Tooltip on Link": {
+    "prefix": "bs5-tooltip-link",
+    "body": [
+      "<a href=\"#\" data-bs-toggle=\"tooltip\" data-bs-title=\"${1:Link tooltip}\">${2:Hover over this link}</a>"
+    ],
+    "description": "Tooltip on a link element"
+  },
+  
+  "Tooltip Custom Trigger": {
+    "prefix": "bs5-tooltip-trigger",
+    "body": [
+      "<button type=\"button\" class=\"btn btn-${1|secondary,primary,success,danger,warning,info,light,dark|}\" data-bs-toggle=\"tooltip\" data-bs-trigger=\"${2|hover,click,focus,manual|}\" data-bs-title=\"${3:Custom trigger tooltip}\">",
+      "  ${4:Custom trigger}",
+      "</button>"
+    ],
+    "description": "Tooltip with custom trigger event"
+  },
+  
+  "Tooltip Disabled Element": {
+    "prefix": "bs5-tooltip-disabled",
+    "body": [
+      "<span class=\"d-inline-block\" tabindex=\"0\" data-bs-toggle=\"tooltip\" data-bs-title=\"${1:Disabled button}\">",
+      "  <button class=\"btn btn-${2|primary,secondary,success,danger,warning,info,light,dark|}\" type=\"button\" disabled>${3:Disabled button}</button>",
+      "</span>"
+    ],
+    "description": "Tooltip on disabled element with wrapper"
+  },
+  
+  "Tooltip with JavaScript": {
+    "prefix": "bs5-tooltip-js",
+    "body": [
+      "<button type=\"button\" class=\"btn btn-${1|secondary,primary,success,danger,warning,info,light,dark|}\" id=\"${2:tooltipBtn}\" data-bs-toggle=\"tooltip\" data-bs-placement=\"${3|top,bottom,left,right|}\" data-bs-title=\"${4:Tooltip text}\">",
+      "  ${5:Show tooltip}",
+      "</button>",
+      "",
+      "<script>",
+      "// Initialize tooltip",
+      "const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle=\"tooltip\"]');",
+      "const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));",
+      "",
+      "// Or initialize specific tooltip",
+      "const tooltipBtn = document.getElementById('${2:tooltipBtn}');",
+      "const tooltip = new bootstrap.Tooltip(tooltipBtn, {",
+      "  title: '${6:Dynamic tooltip}',",
+      "  placement: '${7|top,bottom,left,right|}',",
+      "  trigger: '${8|hover,click,focus,manual|}'",
+      "});",
+      "</script>"
+    ],
+    "description": "Tooltip with JavaScript initialization"
+  },
+  
+  "Tooltip Custom Options": {
+    "prefix": "bs5-tooltip-options",
+    "body": [
+      "<button type=\"button\" class=\"btn btn-${1|secondary,primary,success,danger,warning,info,light,dark|}\" id=\"${2:customTooltip}\" data-bs-toggle=\"tooltip\">",
+      "  ${3:Custom tooltip}",
+      "</button>",
+      "",
+      "<script>",
+      "const customTooltip = new bootstrap.Tooltip(document.getElementById('${2:customTooltip}'), {",
+      "  title: '${4:Custom tooltip text}',",
+      "  placement: '${5|top,bottom,left,right|}',",
+      "  delay: { show: ${6:500}, hide: ${7:100} },",
+      "  animation: ${8|true,false|},",
+      "  html: ${9|false,true|},",
+      "  trigger: '${10|hover focus,click,hover,focus,manual|}'",
+      "});",
+      "</script>"
+    ],
+    "description": "Tooltip with custom configuration options"
+  },
+  
+  "Tooltip Icon": {
+    "prefix": "bs5-tooltip-icon",
+    "body": [
+      "<i class=\"fas fa-${1|question-circle,info-circle,exclamation-circle,lightbulb|} text-${2|primary,secondary,success,danger,warning,info|}\" data-bs-toggle=\"tooltip\" data-bs-title=\"${3:Help text here}\" style=\"cursor: pointer;\"></i>"
+    ],
+    "description": "Tooltip on icon for help text"
+  },
+  
+  "Tooltip Multiple": {
+    "prefix": "bs5-tooltip-multiple",
+    "body": [
+      "<div class=\"btn-group\" role=\"group\">",
+      "  <button type=\"button\" class=\"btn btn-outline-${1|primary,secondary,success,danger,warning,info|}\" data-bs-toggle=\"tooltip\" data-bs-title=\"${2:First tooltip}\">${3:First}</button>",
+      "  <button type=\"button\" class=\"btn btn-outline-${4|primary,secondary,success,danger,warning,info|}\" data-bs-toggle=\"tooltip\" data-bs-title=\"${5:Second tooltip}\">${6:Second}</button>",
+      "  <button type=\"button\" class=\"btn btn-outline-${7|primary,secondary,success,danger,warning,info|}\" data-bs-toggle=\"tooltip\" data-bs-title=\"${8:Third tooltip}\">${9:Third}</button>",
+      "</div>",
+      "",
+      "<script>",
+      "// Initialize all tooltips",
+      "const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle=\"tooltip\"]');",
+      "const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));",
+      "</script>"
+    ],
+    "description": "Multiple tooltips with initialization script"
+  }
+}

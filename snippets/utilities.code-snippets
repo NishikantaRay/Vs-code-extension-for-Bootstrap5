@@ -1,0 +1,427 @@
+{
+    "Bootstrap 5 Display Utilities": {
+        "prefix": "!bs5-d",
+        "body": [
+            "d-${1|none,inline,inline-block,block,grid,table,table-cell,table-row,flex,inline-flex|}"
+        ],
+        "description": "Bootstrap 5 display utility classes"
+    },
+    "Bootstrap 5 Flex Utilities": {
+        "prefix": "!bs5-flex",
+        "body": [
+            "${1|d-flex,d-inline-flex,flex-row,flex-column,flex-row-reverse,flex-column-reverse,flex-wrap,flex-nowrap,flex-wrap-reverse,justify-content-start,justify-content-end,justify-content-center,justify-content-between,justify-content-around,justify-content-evenly,align-items-start,align-items-end,align-items-center,align-items-baseline,align-items-stretch,align-content-start,align-content-end,align-content-center,align-content-between,align-content-around,align-content-stretch,align-self-auto,align-self-start,align-self-end,align-self-center,align-self-baseline,align-self-stretch,flex-fill,flex-grow-0,flex-grow-1,flex-shrink-0,flex-shrink-1|}"
+        ],
+        "description": "Bootstrap 5 flexbox utility classes"
+    },
+    
+    "CSS Grid Container": {
+        "prefix": "bs5-grid",
+        "body": [
+            "d-grid"
+        ],
+        "description": "CSS Grid display container"
+    },
+    "CSS Grid Template Columns": {
+        "prefix": "bs5-grid-cols",
+        "body": [
+            "<div class=\"d-grid\" style=\"grid-template-columns: ${1|repeat(2\\, 1fr),repeat(3\\, 1fr),repeat(4\\, 1fr),repeat(auto-fit\\, minmax(200px\\, 1fr)),1fr 2fr,1fr 1fr 1fr,200px 1fr,auto 1fr auto|};\">",
+            "  ${2:<!-- Grid items -->}",
+            "</div>"
+        ],
+        "description": "CSS Grid with template columns"
+    },
+    "CSS Grid Template Rows": {
+        "prefix": "bs5-grid-rows",
+        "body": [
+            "<div class=\"d-grid\" style=\"grid-template-rows: ${1|repeat(2\\, 1fr),repeat(3\\, 1fr),repeat(4\\, 1fr),auto 1fr auto,100px 1fr,200px 1fr 100px|};\">",
+            "  ${2:<!-- Grid items -->}",
+            "</div>"
+        ],
+        "description": "CSS Grid with template rows"
+    },
+    "CSS Grid Area": {
+        "prefix": "bs5-grid-area",
+        "body": [
+            "style=\"grid-area: ${1:area-name};\""
+        ],
+        "description": "CSS Grid area assignment"
+    },
+    "CSS Grid Template Areas": {
+        "prefix": "bs5-grid-areas",
+        "body": [
+            "<div class=\"d-grid\" style=\"",
+            "  grid-template-areas: ",
+            "    '${1:header} ${1:header} ${1:header}'",
+            "    '${2:sidebar} ${3:main} ${4:aside}'",
+            "    '${5:footer} ${5:footer} ${5:footer}';",
+            "  grid-template-columns: ${6:200px 1fr 150px};",
+            "  grid-template-rows: ${7:auto 1fr auto};",
+            "\">",
+            "  <div style=\"grid-area: ${1:header};\">Header</div>",
+            "  <div style=\"grid-area: ${2:sidebar};\">Sidebar</div>",
+            "  <div style=\"grid-area: ${3:main};\">Main</div>",
+            "  <div style=\"grid-area: ${4:aside};\">Aside</div>",
+            "  <div style=\"grid-area: ${5:footer};\">Footer</div>",
+            "</div>"
+        ],
+        "description": "Complete CSS Grid layout with named areas"
+    },
+    
+    "Gap Utilities": {
+        "prefix": "bs5-gap",
+        "body": [
+            "gap-${1|0,1,2,3,4,5|}"
+        ],
+        "description": "Bootstrap 5 gap utilities for flexbox and grid"
+    },
+    "Row Gap Utilities": {
+        "prefix": "bs5-row-gap",
+        "body": [
+            "row-gap-${1|0,1,2,3,4,5|}"
+        ],
+        "description": "Bootstrap 5 row gap utilities"
+    },
+    "Column Gap Utilities": {
+        "prefix": "bs5-column-gap",
+        "body": [
+            "column-gap-${1|0,1,2,3,4,5|}"
+        ],
+        "description": "Bootstrap 5 column gap utilities"
+    },
+    "Gap with Custom Values": {
+        "prefix": "bs5-gap-custom",
+        "body": [
+            "<div class=\"d-${1|flex,grid|}\" style=\"gap: ${2:1rem};\">",
+            "  ${3:<!-- Content -->}",
+            "</div>"
+        ],
+        "description": "Custom gap values for flexbox or grid"
+    },
+    
+    "Aspect Ratio 1x1": {
+        "prefix": "bs5-ratio-1x1",
+        "body": [
+            "<div class=\"ratio ratio-1x1\">",
+            "  ${1:<!-- Content -->}",
+            "</div>"
+        ],
+        "description": "1:1 aspect ratio container"
+    },
+    "Aspect Ratio 4x3": {
+        "prefix": "bs5-ratio-4x3",
+        "body": [
+            "<div class=\"ratio ratio-4x3\">",
+            "  ${1:<!-- Content -->}",
+            "</div>"
+        ],
+        "description": "4:3 aspect ratio container"
+    },
+    "Aspect Ratio 16x9": {
+        "prefix": "bs5-ratio-16x9",
+        "body": [
+            "<div class=\"ratio ratio-16x9\">",
+            "  ${1:<!-- Content -->}",
+            "</div>"
+        ],
+        "description": "16:9 aspect ratio container"
+    },
+    "Aspect Ratio 21x9": {
+        "prefix": "bs5-ratio-21x9",
+        "body": [
+            "<div class=\"ratio ratio-21x9\">",
+            "  ${1:<!-- Content -->}",
+            "</div>"
+        ],
+        "description": "21:9 aspect ratio container"
+    },
+    "Custom Aspect Ratio": {
+        "prefix": "bs5-ratio-custom",
+        "body": [
+            "<div class=\"ratio\" style=\"--bs-aspect-ratio: ${1:50%};\">",
+            "  ${2:<!-- Content -->}",
+            "</div>"
+        ],
+        "description": "Custom aspect ratio using CSS custom property"
+    },
+    
+    "Object Fit Cover": {
+        "prefix": "bs5-object-fit-cover",
+        "body": [
+            "object-fit-cover"
+        ],
+        "description": "Object fit cover utility"
+    },
+    "Object Fit Contain": {
+        "prefix": "bs5-object-fit-contain",
+        "body": [
+            "object-fit-contain"
+        ],
+        "description": "Object fit contain utility"
+    },
+    "Object Fit Fill": {
+        "prefix": "bs5-object-fit-fill",
+        "body": [
+            "object-fit-fill"
+        ],
+        "description": "Object fit fill utility"
+    },
+    "Object Fit Scale": {
+        "prefix": "bs5-object-fit-scale",
+        "body": [
+            "object-fit-scale"
+        ],
+        "description": "Object fit scale-down utility"
+    },
+    "Object Fit None": {
+        "prefix": "bs5-object-fit-none",
+        "body": [
+            "object-fit-none"
+        ],
+        "description": "Object fit none utility"
+    },
+    "Object Fit with Image": {
+        "prefix": "bs5-img-object-fit",
+        "body": [
+            "<img src=\"${1:image-url}\" alt=\"${2:description}\" class=\"${3|object-fit-cover,object-fit-contain,object-fit-fill,object-fit-scale,object-fit-none|}\" style=\"width: ${4:100%}; height: ${5:200px};\">"
+        ],
+        "description": "Image with object-fit utility class"
+    },
+    
+    "Position Static": {
+        "prefix": "bs5-position-static",
+        "body": [
+            "position-static"
+        ],
+        "description": "Static positioning"
+    },
+    "Position Relative": {
+        "prefix": "bs5-position-relative",
+        "body": [
+            "position-relative"
+        ],
+        "description": "Relative positioning"
+    },
+    "Position Absolute": {
+        "prefix": "bs5-position-absolute",
+        "body": [
+            "position-absolute"
+        ],
+        "description": "Absolute positioning"
+    },
+    "Position Fixed": {
+        "prefix": "bs5-position-fixed",
+        "body": [
+            "position-fixed"
+        ],
+        "description": "Fixed positioning"
+    },
+    "Position Sticky": {
+        "prefix": "bs5-position-sticky",
+        "body": [
+            "position-sticky"
+        ],
+        "description": "Sticky positioning"
+    },
+    "Top Position": {
+        "prefix": "bs5-top",
+        "body": [
+            "top-${1|0,50,100|}"
+        ],
+        "description": "Top position utilities"
+    },
+    "Bottom Position": {
+        "prefix": "bs5-bottom",
+        "body": [
+            "bottom-${1|0,50,100|}"
+        ],
+        "description": "Bottom position utilities"
+    },
+    "Start Position": {
+        "prefix": "bs5-start",
+        "body": [
+            "start-${1|0,50,100|}"
+        ],
+        "description": "Start position utilities (left in LTR)"
+    },
+    "End Position": {
+        "prefix": "bs5-end",
+        "body": [
+            "end-${1|0,50,100|}"
+        ],
+        "description": "End position utilities (right in LTR)"
+    },
+    "Translate Middle": {
+        "prefix": "bs5-translate-middle",
+        "body": [
+            "translate-middle${1|-x,-y,|}"
+        ],
+        "description": "Transform translate utilities"
+    },
+    "Position with Offsets": {
+        "prefix": "bs5-positioned",
+        "body": [
+            "<div class=\"position-${1|relative,absolute,fixed,sticky|} ${2|top,bottom,start,end|}-${3|0,50,100|}\">",
+            "  ${4:Content}",
+            "</div>"
+        ],
+        "description": "Positioned element with offset utilities"
+    },
+    
+    "Z-Index -1": {
+        "prefix": "bs5-z-n1",
+        "body": [
+            "z-n1"
+        ],
+        "description": "Z-index -1 utility"
+    },
+    "Z-Index 0": {
+        "prefix": "bs5-z-0",
+        "body": [
+            "z-0"
+        ],
+        "description": "Z-index 0 utility"
+    },
+    "Z-Index 1": {
+        "prefix": "bs5-z-1",
+        "body": [
+            "z-1"
+        ],
+        "description": "Z-index 1 utility"
+    },
+    "Z-Index 2": {
+        "prefix": "bs5-z-2",
+        "body": [
+            "z-2"
+        ],
+        "description": "Z-index 2 utility"
+    },
+    "Z-Index 3": {
+        "prefix": "bs5-z-3",
+        "body": [
+            "z-3"
+        ],
+        "description": "Z-index 3 utility (highest)"
+    },
+    "Custom Z-Index": {
+        "prefix": "bs5-z-custom",
+        "body": [
+            "style=\"z-index: ${1:1000};\""
+        ],
+        "description": "Custom z-index value"
+    },
+    
+    "Bootstrap 5 Spacing Utilities": {
+        "prefix": "!bs5-spacing",
+        "body": [
+            "${1|m,mx,my,mt,mb,ms,me,p,px,py,pt,pb,ps,pe|}-${2|0,1,2,3,4,5,auto|}"
+        ],
+        "description": "Bootstrap 5 margin and padding utilities"
+    },
+    "Bootstrap 5 Text Utilities": {
+        "prefix": "!bs5-text",
+        "body": [
+            "text-${1|start,end,center,justify,wrap,nowrap,break,lowercase,uppercase,capitalize,decoration-none,decoration-underline,decoration-line-through,primary,secondary,success,danger,warning,info,light,dark,body,muted,white,black-50,white-50|}"
+        ],
+        "description": "Bootstrap 5 text utility classes"
+    },
+    "Bootstrap 5 Background Utilities": {
+        "prefix": "!bs5-bg",
+        "body": [
+            "bg-${1|primary,secondary,success,danger,warning,info,light,dark,body,white,transparent,primary-subtle,secondary-subtle,success-subtle,danger-subtle,warning-subtle,info-subtle,light-subtle,dark-subtle|}"
+        ],
+        "description": "Bootstrap 5 background color utilities"
+    },
+    "Bootstrap 5 Border Utilities": {
+        "prefix": "!bs5-border",
+        "body": [
+            "border${1|-0,-top,-end,-bottom,-start,-top-0,-end-0,-bottom-0,-start-0|} ${2|border-primary,border-secondary,border-success,border-danger,border-warning,border-info,border-light,border-dark,border-white,border-1,border-2,border-3,border-4,border-5,rounded,rounded-0,rounded-1,rounded-2,rounded-3,rounded-circle,rounded-pill,rounded-top,rounded-end,rounded-bottom,rounded-start|}"
+        ],
+        "description": "Bootstrap 5 border utilities"
+    },
+    "Bootstrap 5 Shadow Utilities": {
+        "prefix": "!bs5-shadow",
+        "body": [
+            "shadow${1|-none,-sm,,-lg|}"
+        ],
+        "description": "Bootstrap 5 shadow utilities"
+    },
+    "Bootstrap 5 Width Utilities": {
+        "prefix": "!bs5-width",
+        "body": [
+            "w-${1|25,50,75,100,auto|}"
+        ],
+        "description": "Bootstrap 5 width utilities"
+    },
+    "Bootstrap 5 Height Utilities": {
+        "prefix": "!bs5-height",
+        "body": [
+            "h-${1|25,50,75,100,auto|}"
+        ],
+        "description": "Bootstrap 5 height utilities"
+    },
+    "Bootstrap 5 Overflow Utilities": {
+        "prefix": "!bs5-overflow",
+        "body": [
+            "overflow-${1|auto,hidden,visible,scroll|}"
+        ],
+        "description": "Bootstrap 5 overflow utilities"
+    },
+    
+    "Responsive Grid": {
+        "prefix": "bs5-grid-responsive",
+        "body": [
+            "<div class=\"d-grid\" style=\"",
+            "  grid-template-columns: repeat(auto-fit, minmax(${1:250px}, 1fr));",
+            "  gap: ${2:1rem};",
+            "\">",
+            "  ${3:<!-- Grid items -->}",
+            "</div>"
+        ],
+        "description": "Responsive CSS Grid with auto-fit"
+    },
+    "Grid with Gap": {
+        "prefix": "bs5-grid-gap",
+        "body": [
+            "<div class=\"d-grid gap-${1|1,2,3,4,5|}\">",
+            "  ${2:<!-- Grid items -->}",
+            "</div>"
+        ],
+        "description": "CSS Grid with Bootstrap gap utilities"
+    },
+    "Flex with Gap": {
+        "prefix": "bs5-flex-gap",
+        "body": [
+            "<div class=\"d-flex gap-${1|1,2,3,4,5|} ${2|flex-column,flex-row,flex-wrap|}\">",
+            "  ${3:<!-- Flex items -->}",
+            "</div>"
+        ],
+        "description": "Flexbox with Bootstrap gap utilities"
+    },
+    "Aspect Ratio Video": {
+        "prefix": "bs5-video-responsive",
+        "body": [
+            "<div class=\"ratio ratio-16x9\">",
+            "  <iframe src=\"${1:video-url}\" title=\"${2:Video title}\" allowfullscreen></iframe>",
+            "</div>"
+        ],
+        "description": "Responsive video with 16:9 aspect ratio"
+    },
+    "Sticky Header": {
+        "prefix": "bs5-sticky-header",
+        "body": [
+            "<header class=\"position-sticky top-0 bg-white shadow-sm\" style=\"z-index: 1020;\">",
+            "  ${1:<!-- Header content -->}",
+            "</header>"
+        ],
+        "description": "Sticky header with proper z-index"
+    },
+    "Fixed Bottom Bar": {
+        "prefix": "bs5-fixed-bottom",
+        "body": [
+            "<div class=\"position-fixed bottom-0 start-0 end-0 bg-light border-top p-3\" style=\"z-index: 1030;\">",
+            "  ${1:<!-- Bottom bar content -->}",
+            "</div>"
+        ],
+        "description": "Fixed bottom bar with full width"
+    }
+}

@@ -1,0 +1,211 @@
+{
+    "Bootstrap5 form example": {
+        "prefix": "!bs5-form-example",
+        "body": [
+            "<form class=\"row g-3 needs-validation\" novalidate>",
+            "  <div class=\"col-md-4\">",
+            "    <label for=\"validationCustom01\" class=\"form-label\">First name</label>",
+            "    <input type=\"text\" class=\"form-control\" id=\"validationCustom01\" value=\"Mark\" required>",
+            "    <div class=\"valid-feedback\">",
+            "      Looks good!",
+            "    </div>",
+            "  </div>",
+            "  <div class=\"col-md-4\">",
+            "    <label for=\"validationCustom02\" class=\"form-label\">Last name</label>",
+            "    <input type=\"text\" class=\"form-control\" id=\"validationCustom02\" value=\"Otto\" required>",
+            "    <div class=\"valid-feedback\">",
+            "      Looks good!",
+            "    </div>",
+            "  </div>",
+            "  <div class=\"col-md-4\">",
+            "    <label for=\"validationCustomUsername\" class=\"form-label\">Username</label>",
+            "    <div class=\"input-group\">",
+            "      <span class=\"input-group-text\" id=\"inputGroupPrepend\">@</span>",
+            "      <input type=\"text\" class=\"form-control\" id=\"validationCustomUsername\" aria-describedby=\"inputGroupPrepend\" required>",
+            "      <div class=\"invalid-feedback\">",
+            "        Please choose a username.",
+            "      </div>",
+            "    </div>",
+            "  </div>",
+            "  <div class=\"col-md-6\">",
+            "    <label for=\"validationCustom03\" class=\"form-label\">City</label>",
+            "    <input type=\"text\" class=\"form-control\" id=\"validationCustom03\" required>",
+            "    <div class=\"invalid-feedback\">",
+            "      Please provide a valid city.",
+            "    </div>",
+            "  </div>",
+            "  <div class=\"col-md-3\">",
+            "    <label for=\"validationCustom04\" class=\"form-label\">State</label>",
+            "    <select class=\"form-select\" id=\"validationCustom04\" required>",
+            "      <option selected disabled value=\"\">Choose...</option>",
+            "      <option>...</option>",
+            "    </select>",
+            "    <div class=\"invalid-feedback\">",
+            "      Please select a valid state.",
+            "    </div>",
+            "  </div>",
+            "  <div class=\"col-md-3\">",
+            "    <label for=\"validationCustom05\" class=\"form-label\">Zip</label>",
+            "    <input type=\"text\" class=\"form-control\" id=\"validationCustom05\" required>",
+            "    <div class=\"invalid-feedback\">",
+            "      Please provide a valid zip.",
+            "    </div>",
+            "  </div>",
+            "  <div class=\"col-12\">",
+            "    <div class=\"form-check\">",
+            "      <input class=\"form-check-input\" type=\"checkbox\" value=\"\" id=\"invalidCheck\" required>",
+            "      <label class=\"form-check-label\" for=\"invalidCheck\">",
+            "        Agree to terms and conditions",
+            "      </label>",
+            "      <div class=\"invalid-feedback\">",
+            "        You must agree before submitting.",
+            "      </div>",
+            "    </div>",
+            "  </div>",
+            "  <div class=\"col-12\">",
+            "    <button class=\"btn btn-primary\" type=\"submit\">Submit form</button>",
+            "  </div>",
+            "</form>"
+        ],
+        "description": "form"
+    },
+    "Bootstrap5 email field":{
+        "prefix": "!bs5-email",
+        "body": [
+            "<div class=\"mb-3\">",
+            "<label for=\"exampleFormControlInput1\" class=\"form-label\">Email address</label>",
+            "<input type=\"email\" class=\"form-control\" id=\"exampleFormControlInput1\" placeholder=\"name@example.com\">",
+            "</div>"
+        ],
+        "description": "Email field"
+    },
+    "Bootstrap5  Textarea":{
+        "prefix": "!bs5-textarea",
+        "body": [
+            "<div class=\"mb-3\">",
+            "<label for=\"exampleFormControlTextarea1\" class=\"form-label\">Example textarea</label>",
+            "<textarea class=\"form-control\" id=\"exampleFormControlTextarea1\" rows=\"3\"></textarea>",
+            "</div>"
+        ],
+        "description": "Text area"
+    },
+    "Bootstrap5  lg sm inputbox":{
+        "prefix": "!bs5-ex-inputbox",
+        "body": [
+            "<input class=\"form-control form-control-lg\" type=\"text\" placeholder=\".form-control-lg\" aria-label=\".form-control-lg example\">",
+            "<input class=\"form-control\" type=\"text\" placeholder=\"Default input\" aria-label=\"default input example\">",
+            "<input class=\"form-control form-control-sm\" type=\"text\" placeholder=\".form-control-sm\" aria-label=\".form-control-sm example\">",
+        ],
+        "description": "Input box sm lg"
+    },
+    "Bootstrap5  Disabled inputbox":{
+        "prefix": "!bs5-Disabled-inputbox",
+        "body": [
+            "<input class=\"form-control\" type=\"text\" placeholder=\"Disabled input\" aria-label=\"Disabled input example\" disabled>",
+            "<input class=\"form-control\" type=\"text\" placeholder=\"Disabled readonly input\" aria-label=\"Disabled input example\" disabled readonly>"
+        ],
+        "description": "Disabled inputbox"
+    },
+    "Bootstrap5 File input":{
+        "prefix": "!bs5-File-input",
+        "body": [
+            "<div class=\"mb-3\">",
+            "<label for=\"formFile\" class=\"form-label\">Default file input example</label>",
+            "<input class=\"form-control\" type=\"file\" id=\"formFile\">",
+            "</div>"
+        ],
+        "description": "File input"
+    },
+    "Bootstrap5 Select option":{
+        "prefix": "!bs5-Select",
+        "body": [
+            "<select class=\"form-select\" aria-label=\"Default select example\">",
+            "<option selected>Open this select menu</option>",
+            "<option value=\"1\">One</option>",
+            "<option value=\"2\">Two</option>",
+            "<option value=\"3\">Three</option>",
+            "</select>"
+        ],
+        "description": "Select option"
+    },
+    "Bootstrap5 Check box":{
+        "prefix": "!bs5-Check",
+        "body": [
+            "<div class=\"form-check\">",
+            "<input class=\"form-check-input\" type=\"checkbox\" value=\"\" id=\"flexCheckDefault\">",
+            "<label class=\"form-check-label\" for=\"flexCheckDefault\">",
+             "   Default checkbox",
+            "</label>",
+            "</div>"
+        ],
+        "description": "Check box"
+    },
+    "Bootstrap5 Radio button":{
+        "prefix": "!bs5-Radio",
+        "body": [
+            "<div class=\"form-check\">",
+            "<input class=\"form-check-input\" type=\"radio\" name=\"flexRadioDefault\" id=\"flexRadioDefault1\">",
+            "<label class=\"form-check-label\" for=\"flexRadioDefault1\">",
+             "   Default radio",
+            "</label>",
+            "</div>",
+            "<div class=\"form-check\">",
+            "<input class=\"form-check-input\" type=\"radio\" name=\"flexRadioDefault\" id=\"flexRadioDefault2\" checked>",
+            "<label class=\"form-check-label\" for=\"flexRadioDefault2\">",
+             "   Default checked radio",
+            "</label>",
+            "</div>"
+        ],
+        "description": "Radio button"
+    },
+    "Bootstrap5 Form example 2 with grid":{
+        "prefix": "!bs5-Form-ex",
+        "body": [
+            "<form class=\"row g-3\">",
+            "<div class=\"col-md-6\">",
+                "<label for=\"inputEmail4\" class=\"form-label\">Email</label>",
+                "<input type=\"email\" class=\"form-control\" id=\"inputEmail4\">",
+            "</div>",
+            "<div class=\"col-md-6\">",
+                "<label for=\"inputPassword4\" class=\"form-label\">Password</label>",
+                "<input type=\"password\" class=\"form-control\" id=\"inputPassword4\">",
+            "</div>",
+            "<div class=\"col-12\">",
+                "<label for=\"inputAddress\" class=\"form-label\">Address</label>",
+                "<input type=\"text\" class=\"form-control\" id=\"inputAddress\" placeholder=\"1234 Main St\">",
+            "</div>",
+            "<div class=\"col-12\">",
+                "<label for=\"inputAddress2\" class=\"form-label\">Address 2</label>",
+                "<input type=\"text\" class=\"form-control\" id=\"inputAddress2\" placeholder=\"Apartment, studio, or floor\">",
+            "</div>",
+            "<div class=\"col-md-6\">",
+                "<label for=\"inputCity\" class=\"form-label\">City</label>",
+                "<input type=\"text\" class=\"form-control\" id=\"inputCity\">",
+            "</div>",
+            "<div class=\"col-md-4\">",
+                "<label for=\"inputState\" class=\"form-label\">State</label>",
+                "<select id=\"inputState\" class=\"form-select\">",
+                "<option selected>Choose...</option>",
+                "<option>...</option>",
+                "</select>",
+            "</div>",
+            "<div class=\"col-md-2\">",
+               " <label for=\"inputZip\" class=\"form-label\">Zip</label>",
+              "  <input type=\"text\" class=\"form-control\" id=\"inputZip\">",
+            "</div>",
+            "<div class=\"col-12\">",
+                "<div class=\"form-check\">",
+                "<input class=\"form-check-input\" type=\"checkbox\" id=\"gridCheck\">",
+                "<label class=\"form-check-label\" for=\"gridCheck\">",
+                    "Check me out",
+                "</label>",
+                "</div>",
+            "</div>",
+            "<div class=\"col-12\">",
+                "<button type=\"submit\" class=\"btn btn-primary\">Sign in</button>",
+            "</div>",
+            "</form>"
+        ],
+        "description": "Radio button"
+    }
+}

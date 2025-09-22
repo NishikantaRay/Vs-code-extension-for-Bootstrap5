@@ -1,0 +1,167 @@
+{
+  "Toast Basic": {
+    "prefix": "bs5-toast",
+    "body": [
+      "<div class=\"toast\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">",
+      "  <div class=\"toast-header\">",
+      "    <img src=\"${1:...}\" class=\"rounded me-2\" alt=\"${2:...}\">",
+      "    <strong class=\"me-auto\">${3:Bootstrap}</strong>",
+      "    <small>${4:11 mins ago}</small>",
+      "    <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"toast\" aria-label=\"Close\"></button>",
+      "  </div>",
+      "  <div class=\"toast-body\">",
+      "    ${5:Hello, world! This is a toast message.}",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Basic toast notification component"
+  },
+  
+  "Toast Success": {
+    "prefix": "bs5-toast-success",
+    "body": [
+      "<div class=\"toast align-items-center text-bg-success border-0\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">",
+      "  <div class=\"d-flex\">",
+      "    <div class=\"toast-body\">",
+      "      <i class=\"fas fa-check-circle me-2\"></i>${1:Success! Your action was completed successfully.}",
+      "    </div>",
+      "    <button type=\"button\" class=\"btn-close btn-close-white me-2 m-auto\" data-bs-dismiss=\"toast\" aria-label=\"Close\"></button>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Success toast notification with green styling"
+  },
+  
+  "Toast Error": {
+    "prefix": "bs5-toast-error",
+    "body": [
+      "<div class=\"toast align-items-center text-bg-danger border-0\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">",
+      "  <div class=\"d-flex\">",
+      "    <div class=\"toast-body\">",
+      "      <i class=\"fas fa-exclamation-circle me-2\"></i>${1:Error! Something went wrong. Please try again.}",
+      "    </div>",
+      "    <button type=\"button\" class=\"btn-close btn-close-white me-2 m-auto\" data-bs-dismiss=\"toast\" aria-label=\"Close\"></button>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Error toast notification with red styling"
+  },
+  
+  "Toast Warning": {
+    "prefix": "bs5-toast-warning",
+    "body": [
+      "<div class=\"toast align-items-center text-bg-warning border-0\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">",
+      "  <div class=\"d-flex\">",
+      "    <div class=\"toast-body\">",
+      "      <i class=\"fas fa-exclamation-triangle me-2\"></i>${1:Warning! Please check your input.}",
+      "    </div>",
+      "    <button type=\"button\" class=\"btn-close me-2 m-auto\" data-bs-dismiss=\"toast\" aria-label=\"Close\"></button>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Warning toast notification with yellow styling"
+  },
+  
+  "Toast Info": {
+    "prefix": "bs5-toast-info",
+    "body": [
+      "<div class=\"toast align-items-center text-bg-info border-0\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">",
+      "  <div class=\"d-flex\">",
+      "    <div class=\"toast-body\">",
+      "      <i class=\"fas fa-info-circle me-2\"></i>${1:Info! Here's some information for you.}",
+      "    </div>",
+      "    <button type=\"button\" class=\"btn-close btn-close-white me-2 m-auto\" data-bs-dismiss=\"toast\" aria-label=\"Close\"></button>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Info toast notification with blue styling"
+  },
+  
+  "Toast Container": {
+    "prefix": "bs5-toast-container",
+    "body": [
+      "<!-- Toast container -->",
+      "<div class=\"toast-container position-fixed ${1|top-0 start-50 translate-middle-x,top-0 end-0,bottom-0 end-0,bottom-0 start-50 translate-middle-x,bottom-0 start-0|}\" style=\"z-index: 1055\">",
+      "  <div class=\"toast\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">",
+      "    <div class=\"toast-header\">",
+      "      <img src=\"${2:...}\" class=\"rounded me-2\" alt=\"${3:...}\">",
+      "      <strong class=\"me-auto\">${4:Bootstrap}</strong>",
+      "      <small class=\"text-muted\">${5:just now}</small>",
+      "      <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"toast\" aria-label=\"Close\"></button>",
+      "    </div>",
+      "    <div class=\"toast-body\">",
+      "      ${6:See? Just like this.}",
+      "    </div>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Toast container with positioning options"
+  },
+  
+  "Toast Stacked": {
+    "prefix": "bs5-toast-stack",
+    "body": [
+      "<!-- Toast container for stacking -->",
+      "<div class=\"toast-container position-fixed top-0 end-0 p-3\" style=\"z-index: 1055\">",
+      "  <!-- Toast 1 -->",
+      "  <div class=\"toast\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">",
+      "    <div class=\"toast-header\">",
+      "      <i class=\"fas fa-bell text-primary me-2\"></i>",
+      "      <strong class=\"me-auto\">${1:Notification}</strong>",
+      "      <small class=\"text-muted\">${2:2 mins ago}</small>",
+      "      <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"toast\" aria-label=\"Close\"></button>",
+      "    </div>",
+      "    <div class=\"toast-body\">",
+      "      ${3:First notification message}",
+      "    </div>",
+      "  </div>",
+      "  <!-- Toast 2 -->",
+      "  <div class=\"toast\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">",
+      "    <div class=\"toast-header\">",
+      "      <i class=\"fas fa-envelope text-success me-2\"></i>",
+      "      <strong class=\"me-auto\">${4:Message}</strong>",
+      "      <small class=\"text-muted\">${5:5 mins ago}</small>",
+      "      <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"toast\" aria-label=\"Close\"></button>",
+      "    </div>",
+      "    <div class=\"toast-body\">",
+      "      ${6:Second notification message}",
+      "    </div>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Stacked toast notifications"
+  },
+  
+  "Toast with JavaScript": {
+    "prefix": "bs5-toast-js",
+    "body": [
+      "<!-- Toast -->",
+      "<div id=\"${1:liveToast}\" class=\"toast\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">",
+      "  <div class=\"toast-header\">",
+      "    <i class=\"fas fa-${2:info-circle} text-primary me-2\"></i>",
+      "    <strong class=\"me-auto\">${3:Bootstrap}</strong>",
+      "    <small>${4:11 mins ago}</small>",
+      "    <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"toast\" aria-label=\"Close\"></button>",
+      "  </div>",
+      "  <div class=\"toast-body\">",
+      "    ${5:Hello, world! This is a toast message.}",
+      "  </div>",
+      "</div>",
+      "",
+      "<!-- Button trigger -->",
+      "<button type=\"button\" class=\"btn btn-primary\" id=\"${6:liveToastBtn}\">${7:Show live toast}</button>",
+      "",
+      "<script>",
+      "const toastTrigger = document.getElementById('${6:liveToastBtn}');",
+      "const toastLive = document.getElementById('${1:liveToast}');",
+      "if (toastTrigger) {",
+      "  toastTrigger.addEventListener('click', () => {",
+      "    const toast = new bootstrap.Toast(toastLive);",
+      "    toast.show();",
+      "  });",
+      "}",
+      "</script>"
+    ],
+    "description": "Toast with JavaScript trigger functionality"
+  }
+}

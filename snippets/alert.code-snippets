@@ -1,0 +1,138 @@
+{
+  "Alert Basic": {
+    "prefix": "bs5-alert",
+    "body": [
+      "<div class=\"alert alert-${1|primary,secondary,success,danger,warning,info,light,dark|}\" role=\"alert\">",
+      "  ${2:A simple alert—check it out!}",
+      "</div>"
+    ],
+    "description": "Basic alert with Bootstrap color variations"
+  },
+  
+  "Alert with Heading": {
+    "prefix": "bs5-alert-heading",
+    "body": [
+      "<div class=\"alert alert-${1|success,primary,secondary,danger,warning,info,light,dark|}\" role=\"alert\">",
+      "  <h4 class=\"alert-heading\">${2:Well done!}</h4>",
+      "  <p>${3:Aww yeah, you successfully read this important alert message.}</p>",
+      "  <hr>",
+      "  <p class=\"mb-0\">${4:Whenever you need to, be sure to use margin utilities to keep things nice and tidy.}</p>",
+      "</div>"
+    ],
+    "description": "Alert with heading and additional content"
+  },
+  
+  "Alert with Link": {
+    "prefix": "bs5-alert-link",
+    "body": [
+      "<div class=\"alert alert-${1|primary,secondary,success,danger,warning,info,light,dark|}\" role=\"alert\">",
+      "  ${2:A simple alert with} <a href=\"#\" class=\"alert-link\">${3:an example link}</a>. ${4:Give it a click if you like.}",
+      "</div>"
+    ],
+    "description": "Alert with styled link"
+  },
+  
+  "Alert Dismissible": {
+    "prefix": "bs5-alert-dismissible",
+    "body": [
+      "<div class=\"alert alert-${1|warning,primary,secondary,success,danger,info,light,dark|} alert-dismissible fade show\" role=\"alert\">",
+      "  <strong>${2:Holy guacamole!}</strong> ${3:You should check in on some of those fields below.}",
+      "  <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\"></button>",
+      "</div>"
+    ],
+    "description": "Dismissible alert with close button"
+  },
+  
+  "Alert with Icon": {
+    "prefix": "bs5-alert-icon",
+    "body": [
+      "<div class=\"alert alert-${1|primary,secondary,success,danger,warning,info,light,dark|} d-flex align-items-center\" role=\"alert\">",
+      "  <i class=\"fas fa-${2|info-circle,exclamation-triangle,check-circle,times-circle,lightbulb,bell|} me-2\"></i>",
+      "  <div>",
+      "    ${3:An example alert with an icon}",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Alert with FontAwesome icon"
+  },
+  
+  "Alert with Button": {
+    "prefix": "bs5-alert-button",
+    "body": [
+      "<div class=\"alert alert-${1|primary,secondary,success,danger,warning,info,light,dark|}\" role=\"alert\">",
+      "  <h4 class=\"alert-heading\">${2:Alert Title}</h4>",
+      "  <p>${3:Alert message goes here.}</p>",
+      "  <hr>",
+      "  <div class=\"d-flex justify-content-end\">",
+      "    <button type=\"button\" class=\"btn btn-outline-${1|primary,secondary,success,danger,warning,info,dark,light|}\">${4:Take Action}</button>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Alert with action button"
+  },
+  
+  "Alert List": {
+    "prefix": "bs5-alert-list",
+    "body": [
+      "<div class=\"alert alert-${1|danger,warning,success,info|}\" role=\"alert\">",
+      "  <h4 class=\"alert-heading\">${2:Error Summary}</h4>",
+      "  <p>${3:Please fix the following issues:}</p>",
+      "  <ul class=\"mb-0\">",
+      "    <li>${4:First issue description}</li>",
+      "    <li>${5:Second issue description}</li>",
+      "    <li>${6:Third issue description}</li>",
+      "  </ul>",
+      "</div>"
+    ],
+    "description": "Alert with list of items"
+  },
+  
+  "Alert Toast Style": {
+    "prefix": "bs5-alert-toast",
+    "body": [
+      "<div class=\"alert alert-${1|success,primary,secondary,danger,warning,info,light,dark|} alert-dismissible fade show position-fixed top-0 end-0 m-3\" role=\"alert\" style=\"z-index: 1050;\">",
+      "  <strong>${2:Notification!}</strong> ${3:This is a toast-style alert.}",
+      "  <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\"></button>",
+      "</div>"
+    ],
+    "description": "Toast-style positioned alert"
+  },
+  
+  "Alert with Progress": {
+    "prefix": "bs5-alert-progress",
+    "body": [
+      "<div class=\"alert alert-${1|info,primary,secondary|}\" role=\"alert\">",
+      "  <div class=\"d-flex align-items-center\">",
+      "    <strong class=\"me-auto\">${2:Processing...}</strong>",
+      "    <small>${3:75% complete}</small>",
+      "  </div>",
+      "  <div class=\"progress mt-2\" style=\"height: 6px;\">",
+      "    <div class=\"progress-bar\" style=\"width: ${4:75}%\" role=\"progressbar\" aria-valuenow=\"${4:75}\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Alert with embedded progress bar"
+  },
+  
+  "Alert Auto Dismiss": {
+    "prefix": "bs5-alert-auto",
+    "body": [
+      "<div id=\"${1:autoAlert}\" class=\"alert alert-${2|success,primary,secondary,danger,warning,info,light,dark|} alert-dismissible fade show\" role=\"alert\">",
+      "  ${3:This alert will automatically dismiss after 5 seconds.}",
+      "  <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\"></button>",
+      "</div>",
+      "",
+      "<script>",
+      "// Auto dismiss after 5 seconds",
+      "setTimeout(function() {",
+      "  const alert = document.getElementById('${1:autoAlert}');",
+      "  if (alert) {",
+      "    const bsAlert = new bootstrap.Alert(alert);",
+      "    bsAlert.close();",
+      "  }",
+      "}, ${4:5000});",
+      "</script>"
+    ],
+    "description": "Alert that automatically dismisses after specified time"
+  }
+}

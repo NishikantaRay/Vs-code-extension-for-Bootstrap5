@@ -1,0 +1,112 @@
+{
+    "Bootstrap Modal Initialize": {
+        "prefix": "bs5-modal-init",
+        "body": [
+            "const ${1:myModal} = new bootstrap.Modal(document.getElementById('${2:modalId}'), {",
+            "  keyboard: ${3|true,false|},",
+            "  backdrop: ${4|true,false,'static'|}",
+            "});",
+            "${1:myModal}.show();"
+        ],
+        "description": "Initialize a Bootstrap 5 modal with JavaScript"
+    },
+    "Bootstrap Tooltip Initialize": {
+        "prefix": "bs5-tooltip-init",
+        "body": [
+            "const ${1:tooltipTriggerList} = document.querySelectorAll('[data-bs-toggle=\"tooltip\"]');",
+            "const ${2:tooltipList} = [...${1:tooltipTriggerList}].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));"
+        ],
+        "description": "Initialize Bootstrap 5 tooltips"
+    },
+    "Bootstrap Popover Initialize": {
+        "prefix": "bs5-popover-init", 
+        "body": [
+            "const ${1:popoverTriggerList} = document.querySelectorAll('[data-bs-toggle=\"popover\"]');",
+            "const ${2:popoverList} = [...${1:popoverTriggerList}].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));"
+        ],
+        "description": "Initialize Bootstrap 5 popovers"
+    },
+    "Bootstrap Carousel Initialize": {
+        "prefix": "bs5-carousel-init",
+        "body": [
+            "const ${1:myCarousel} = new bootstrap.Carousel(document.getElementById('${2:carouselId}'), {",
+            "  interval: ${3|2000,5000,false|},",
+            "  wrap: ${4|true,false|}",
+            "});",
+            "${5|// myCarousel.next();,// myCarousel.prev();,// myCarousel.pause();,// myCarousel.cycle();|}"
+        ],
+        "description": "Initialize a Bootstrap 5 carousel with JavaScript"
+    },
+    "Bootstrap Offcanvas Initialize": {
+        "prefix": "bs5-offcanvas-init",
+        "body": [
+            "const ${1:myOffcanvas} = new bootstrap.Offcanvas(document.getElementById('${2:offcanvasId}'));",
+            "${1:myOffcanvas}.show();"
+        ],
+        "description": "Initialize a Bootstrap 5 offcanvas"
+    },
+    "Bootstrap Tab Initialize": {
+        "prefix": "bs5-tab-init",
+        "body": [
+            "const ${1:triggerTabList} = document.querySelectorAll('#${2:myTab} button');",
+            "${1:triggerTabList}.forEach(triggerEl => {",
+            "  const tabTrigger = new bootstrap.Tab(triggerEl);",
+            "  ",
+            "  triggerEl.addEventListener('click', event => {",
+            "    event.preventDefault();",
+            "    tabTrigger.show();",
+            "  });",
+            "});"
+        ],
+        "description": "Initialize Bootstrap 5 tabs"
+    },
+    "Bootstrap Collapse Initialize": {
+        "prefix": "bs5-collapse-init",
+        "body": [
+            "const ${1:myCollapsible} = new bootstrap.Collapse(document.getElementById('${2:collapseId}'), {",
+            "  toggle: ${3|true,false|}",
+            "});",
+            "${4|// myCollapsible.show();,// myCollapsible.hide();,// myCollapsible.toggle();|}"
+        ],
+        "description": "Initialize a Bootstrap 5 collapse"
+    },
+    "Bootstrap Dropdown Initialize": {
+        "prefix": "bs5-dropdown-init",
+        "body": [
+            "const ${1:dropdownElementList} = document.querySelectorAll('.dropdown-toggle');",
+            "const ${2:dropdownList} = [...${1:dropdownElementList}].map(dropdownToggleEl => new bootstrap.Dropdown(dropdownToggleEl));"
+        ],
+        "description": "Initialize Bootstrap 5 dropdowns"
+    },
+    "Bootstrap Alert Dismiss": {
+        "prefix": "bs5-alert-dismiss",
+        "body": [
+            "const ${1:alertList} = document.querySelectorAll('.alert');",
+            "${1:alertList}.forEach(function (alert) {",
+            "  new bootstrap.Alert(alert);",
+            "});"
+        ],
+        "description": "Initialize Bootstrap 5 dismissible alerts"
+    },
+    "Bootstrap Form Validation": {
+        "prefix": "bs5-form-validation",
+        "body": [
+            "(function() {",
+            "  'use strict';",
+            "  window.addEventListener('load', function() {",
+            "    const forms = document.getElementsByClassName('needs-validation');",
+            "    const validation = Array.prototype.filter.call(forms, function(form) {",
+            "      form.addEventListener('submit', function(event) {",
+            "        if (form.checkValidity() === false) {",
+            "          event.preventDefault();",
+            "          event.stopPropagation();",
+            "        }",
+            "        form.classList.add('was-validated');",
+            "      }, false);",
+            "    });",
+            "  }, false);",
+            "})();"
+        ],
+        "description": "Bootstrap 5 form validation script"
+    }
+}

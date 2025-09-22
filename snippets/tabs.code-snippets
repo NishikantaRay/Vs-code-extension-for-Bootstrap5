@@ -1,0 +1,150 @@
+{
+  "Tabs Basic": {
+    "prefix": "bs5-tabs",
+    "body": [
+      "<ul class=\"nav nav-tabs\" id=\"${1:myTab}\" role=\"tablist\">",
+      "  <li class=\"nav-item\" role=\"presentation\">",
+      "    <button class=\"nav-link active\" id=\"${2:home}-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#${2:home}-tab-pane\" type=\"button\" role=\"tab\" aria-controls=\"${2:home}-tab-pane\" aria-selected=\"true\">${3:Home}</button>",
+      "  </li>",
+      "  <li class=\"nav-item\" role=\"presentation\">",
+      "    <button class=\"nav-link\" id=\"${4:profile}-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#${4:profile}-tab-pane\" type=\"button\" role=\"tab\" aria-controls=\"${4:profile}-tab-pane\" aria-selected=\"false\">${5:Profile}</button>",
+      "  </li>",
+      "  <li class=\"nav-item\" role=\"presentation\">",
+      "    <button class=\"nav-link\" id=\"${6:contact}-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#${6:contact}-tab-pane\" type=\"button\" role=\"tab\" aria-controls=\"${6:contact}-tab-pane\" aria-selected=\"false\">${7:Contact}</button>",
+      "  </li>",
+      "</ul>",
+      "<div class=\"tab-content\" id=\"${1:myTab}Content\">",
+      "  <div class=\"tab-pane fade show active\" id=\"${2:home}-tab-pane\" role=\"tabpanel\" aria-labelledby=\"${2:home}-tab\" tabindex=\"0\">${8:Home tab content}</div>",
+      "  <div class=\"tab-pane fade\" id=\"${4:profile}-tab-pane\" role=\"tabpanel\" aria-labelledby=\"${4:profile}-tab\" tabindex=\"0\">${9:Profile tab content}</div>",
+      "  <div class=\"tab-pane fade\" id=\"${6:contact}-tab-pane\" role=\"tabpanel\" aria-labelledby=\"${6:contact}-tab\" tabindex=\"0\">${10:Contact tab content}</div>",
+      "</div>"
+    ],
+    "description": "Basic tab navigation with content"
+  },
+  
+  "Tabs Pills": {
+    "prefix": "bs5-tabs-pills",
+    "body": [
+      "<ul class=\"nav nav-pills\" id=\"${1:pills-tab}\" role=\"tablist\">",
+      "  <li class=\"nav-item\" role=\"presentation\">",
+      "    <button class=\"nav-link active\" id=\"${2:pills-home}-tab\" data-bs-toggle=\"pill\" data-bs-target=\"#${2:pills-home}\" type=\"button\" role=\"tab\" aria-controls=\"${2:pills-home}\" aria-selected=\"true\">${3:Home}</button>",
+      "  </li>",
+      "  <li class=\"nav-item\" role=\"presentation\">",
+      "    <button class=\"nav-link\" id=\"${4:pills-profile}-tab\" data-bs-toggle=\"pill\" data-bs-target=\"#${4:pills-profile}\" type=\"button\" role=\"tab\" aria-controls=\"${4:pills-profile}\" aria-selected=\"false\">${5:Profile}</button>",
+      "  </li>",
+      "  <li class=\"nav-item\" role=\"presentation\">",
+      "    <button class=\"nav-link\" id=\"${6:pills-contact}-tab\" data-bs-toggle=\"pill\" data-bs-target=\"#${6:pills-contact}\" type=\"button\" role=\"tab\" aria-controls=\"${6:pills-contact}\" aria-selected=\"false\">${7:Contact}</button>",
+      "  </li>",
+      "</ul>",
+      "<div class=\"tab-content\" id=\"${1:pills-tab}Content\">",
+      "  <div class=\"tab-pane fade show active\" id=\"${2:pills-home}\" role=\"tabpanel\" aria-labelledby=\"${2:pills-home}-tab\" tabindex=\"0\">${8:Home content}</div>",
+      "  <div class=\"tab-pane fade\" id=\"${4:pills-profile}\" role=\"tabpanel\" aria-labelledby=\"${4:pills-profile}-tab\" tabindex=\"0\">${9:Profile content}</div>",
+      "  <div class=\"tab-pane fade\" id=\"${6:pills-contact}\" role=\"tabpanel\" aria-labelledby=\"${6:pills-contact}-tab\" tabindex=\"0\">${10:Contact content}</div>",
+      "</div>"
+    ],
+    "description": "Pills-style tab navigation"
+  },
+  
+  "Tabs Vertical": {
+    "prefix": "bs5-tabs-vertical",
+    "body": [
+      "<div class=\"d-flex align-items-start\">",
+      "  <div class=\"nav flex-column nav-pills me-3\" id=\"${1:v-pills-tab}\" role=\"tablist\" aria-orientation=\"vertical\">",
+      "    <button class=\"nav-link active\" id=\"${2:v-pills-home}-tab\" data-bs-toggle=\"pill\" data-bs-target=\"#${2:v-pills-home}\" type=\"button\" role=\"tab\" aria-controls=\"${2:v-pills-home}\" aria-selected=\"true\">${3:Home}</button>",
+      "    <button class=\"nav-link\" id=\"${4:v-pills-profile}-tab\" data-bs-toggle=\"pill\" data-bs-target=\"#${4:v-pills-profile}\" type=\"button\" role=\"tab\" aria-controls=\"${4:v-pills-profile}\" aria-selected=\"false\">${5:Profile}</button>",
+      "    <button class=\"nav-link\" id=\"${6:v-pills-disabled}-tab\" data-bs-toggle=\"pill\" data-bs-target=\"#${6:v-pills-disabled}\" type=\"button\" role=\"tab\" aria-controls=\"${6:v-pills-disabled}\" aria-selected=\"false\" disabled>${7:Disabled}</button>",
+      "    <button class=\"nav-link\" id=\"${8:v-pills-messages}-tab\" data-bs-toggle=\"pill\" data-bs-target=\"#${8:v-pills-messages}\" type=\"button\" role=\"tab\" aria-controls=\"${8:v-pills-messages}\" aria-selected=\"false\">${9:Messages}</button>",
+      "    <button class=\"nav-link\" id=\"${10:v-pills-settings}-tab\" data-bs-toggle=\"pill\" data-bs-target=\"#${10:v-pills-settings}\" type=\"button\" role=\"tab\" aria-controls=\"${10:v-pills-settings}\" aria-selected=\"false\">${11:Settings}</button>",
+      "  </div>",
+      "  <div class=\"tab-content\" id=\"${1:v-pills-tab}Content\">",
+      "    <div class=\"tab-pane fade show active\" id=\"${2:v-pills-home}\" role=\"tabpanel\" aria-labelledby=\"${2:v-pills-home}-tab\" tabindex=\"0\">${12:Home content}</div>",
+      "    <div class=\"tab-pane fade\" id=\"${4:v-pills-profile}\" role=\"tabpanel\" aria-labelledby=\"${4:v-pills-profile}-tab\" tabindex=\"0\">${13:Profile content}</div>",
+      "    <div class=\"tab-pane fade\" id=\"${6:v-pills-disabled}\" role=\"tabpanel\" aria-labelledby=\"${6:v-pills-disabled}-tab\" tabindex=\"0\">${14:Disabled content}</div>",
+      "    <div class=\"tab-pane fade\" id=\"${8:v-pills-messages}\" role=\"tabpanel\" aria-labelledby=\"${8:v-pills-messages}-tab\" tabindex=\"0\">${15:Messages content}</div>",
+      "    <div class=\"tab-pane fade\" id=\"${10:v-pills-settings}\" role=\"tabpanel\" aria-labelledby=\"${10:v-pills-settings}-tab\" tabindex=\"0\">${16:Settings content}</div>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Vertical tab navigation"
+  },
+  
+  "Tabs Justified": {
+    "prefix": "bs5-tabs-justified",
+    "body": [
+      "<ul class=\"nav nav-tabs nav-justified\" id=\"${1:myTab}\" role=\"tablist\">",
+      "  <li class=\"nav-item\" role=\"presentation\">",
+      "    <button class=\"nav-link active\" id=\"${2:home}-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#${2:home}-tab-pane\" type=\"button\" role=\"tab\" aria-controls=\"${2:home}-tab-pane\" aria-selected=\"true\">${3:Home}</button>",
+      "  </li>",
+      "  <li class=\"nav-item\" role=\"presentation\">",
+      "    <button class=\"nav-link\" id=\"${4:profile}-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#${4:profile}-tab-pane\" type=\"button\" role=\"tab\" aria-controls=\"${4:profile}-tab-pane\" aria-selected=\"false\">${5:Profile}</button>",
+      "  </li>",
+      "  <li class=\"nav-item\" role=\"presentation\">",
+      "    <button class=\"nav-link\" id=\"${6:contact}-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#${6:contact}-tab-pane\" type=\"button\" role=\"tab\" aria-controls=\"${6:contact}-tab-pane\" aria-selected=\"false\">${7:Contact}</button>",
+      "  </li>",
+      "</ul>",
+      "<div class=\"tab-content\" id=\"${1:myTab}Content\">",
+      "  <div class=\"tab-pane fade show active\" id=\"${2:home}-tab-pane\" role=\"tabpanel\" aria-labelledby=\"${2:home}-tab\" tabindex=\"0\">${8:Home content}</div>",
+      "  <div class=\"tab-pane fade\" id=\"${4:profile}-tab-pane\" role=\"tabpanel\" aria-labelledby=\"${4:profile}-tab\" tabindex=\"0\">${9:Profile content}</div>",
+      "  <div class=\"tab-pane fade\" id=\"${6:contact}-tab-pane\" role=\"tabpanel\" aria-labelledby=\"${6:contact}-tab\" tabindex=\"0\">${10:Contact content}</div>",
+      "</div>"
+    ],
+    "description": "Justified tabs that fill the full width"
+  },
+  
+  "Tabs with Icons": {
+    "prefix": "bs5-tabs-icons",
+    "body": [
+      "<ul class=\"nav nav-tabs\" id=\"${1:iconTab}\" role=\"tablist\">",
+      "  <li class=\"nav-item\" role=\"presentation\">",
+      "    <button class=\"nav-link active\" id=\"${2:home}-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#${2:home}-tab-pane\" type=\"button\" role=\"tab\" aria-controls=\"${2:home}-tab-pane\" aria-selected=\"true\">",
+      "      <i class=\"fas fa-${3:home} me-2\"></i>${4:Home}",
+      "    </button>",
+      "  </li>",
+      "  <li class=\"nav-item\" role=\"presentation\">",
+      "    <button class=\"nav-link\" id=\"${5:profile}-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#${5:profile}-tab-pane\" type=\"button\" role=\"tab\" aria-controls=\"${5:profile}-tab-pane\" aria-selected=\"false\">",
+      "      <i class=\"fas fa-${6:user} me-2\"></i>${7:Profile}",
+      "    </button>",
+      "  </li>",
+      "  <li class=\"nav-item\" role=\"presentation\">",
+      "    <button class=\"nav-link\" id=\"${8:settings}-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#${8:settings}-tab-pane\" type=\"button\" role=\"tab\" aria-controls=\"${8:settings}-tab-pane\" aria-selected=\"false\">",
+      "      <i class=\"fas fa-${9:cog} me-2\"></i>${10:Settings}",
+      "    </button>",
+      "  </li>",
+      "</ul>",
+      "<div class=\"tab-content\" id=\"${1:iconTab}Content\">",
+      "  <div class=\"tab-pane fade show active\" id=\"${2:home}-tab-pane\" role=\"tabpanel\" aria-labelledby=\"${2:home}-tab\" tabindex=\"0\">${11:Home content}</div>",
+      "  <div class=\"tab-pane fade\" id=\"${5:profile}-tab-pane\" role=\"tabpanel\" aria-labelledby=\"${5:profile}-tab\" tabindex=\"0\">${12:Profile content}</div>",
+      "  <div class=\"tab-pane fade\" id=\"${8:settings}-tab-pane\" role=\"tabpanel\" aria-labelledby=\"${8:settings}-tab\" tabindex=\"0\">${13:Settings content}</div>",
+      "</div>"
+    ],
+    "description": "Tabs with FontAwesome icons"
+  },
+  
+  "Tabs Dropdown": {
+    "prefix": "bs5-tabs-dropdown",
+    "body": [
+      "<ul class=\"nav nav-tabs\" id=\"${1:myTab}\" role=\"tablist\">",
+      "  <li class=\"nav-item\" role=\"presentation\">",
+      "    <button class=\"nav-link active\" id=\"${2:home}-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#${2:home}-tab-pane\" type=\"button\" role=\"tab\" aria-controls=\"${2:home}-tab-pane\" aria-selected=\"true\">${3:Home}</button>",
+      "  </li>",
+      "  <li class=\"nav-item dropdown\">",
+      "    <a class=\"nav-link dropdown-toggle\" data-bs-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-expanded=\"false\">${4:Dropdown}</a>",
+      "    <ul class=\"dropdown-menu\">",
+      "      <li><a class=\"dropdown-item\" id=\"${5:dropdown1}-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#${5:dropdown1}\" role=\"tab\" aria-controls=\"${5:dropdown1}\" aria-selected=\"false\">${6:Dropdown 1}</a></li>",
+      "      <li><a class=\"dropdown-item\" id=\"${7:dropdown2}-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#${7:dropdown2}\" role=\"tab\" aria-controls=\"${7:dropdown2}\" aria-selected=\"false\">${8:Dropdown 2}</a></li>",
+      "    </ul>",
+      "  </li>",
+      "  <li class=\"nav-item\" role=\"presentation\">",
+      "    <button class=\"nav-link\" id=\"${9:contact}-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#${9:contact}-tab-pane\" type=\"button\" role=\"tab\" aria-controls=\"${9:contact}-tab-pane\" aria-selected=\"false\">${10:Contact}</button>",
+      "  </li>",
+      "</ul>",
+      "<div class=\"tab-content\" id=\"${1:myTab}Content\">",
+      "  <div class=\"tab-pane fade show active\" id=\"${2:home}-tab-pane\" role=\"tabpanel\" aria-labelledby=\"${2:home}-tab\" tabindex=\"0\">${11:Home content}</div>",
+      "  <div class=\"tab-pane fade\" id=\"${5:dropdown1}\" role=\"tabpanel\" aria-labelledby=\"${5:dropdown1}-tab\" tabindex=\"0\">${12:Dropdown 1 content}</div>",
+      "  <div class=\"tab-pane fade\" id=\"${7:dropdown2}\" role=\"tabpanel\" aria-labelledby=\"${7:dropdown2}-tab\" tabindex=\"0\">${13:Dropdown 2 content}</div>",
+      "  <div class=\"tab-pane fade\" id=\"${9:contact}-tab-pane\" role=\"tabpanel\" aria-labelledby=\"${9:contact}-tab\" tabindex=\"0\">${14:Contact content}</div>",
+      "</div>"
+    ],
+    "description": "Tabs with dropdown menu"
+  }
+}

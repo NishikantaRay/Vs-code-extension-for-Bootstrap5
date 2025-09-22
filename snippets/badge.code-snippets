@@ -1,0 +1,108 @@
+{
+  "Badge Basic": {
+    "prefix": "bs5-badge",
+    "body": [
+      "<span class=\"badge bg-${1|primary,secondary,success,danger,warning,info,light,dark|}\">${2:New}</span>"
+    ],
+    "description": "Basic badge with Bootstrap color variations"
+  },
+  
+  "Badge Pill": {
+    "prefix": "bs5-badge-pill",
+    "body": [
+      "<span class=\"badge rounded-pill bg-${1|primary,secondary,success,danger,warning,info,light,dark|}\">${2:Pills}</span>"
+    ],
+    "description": "Pill-shaped badge"
+  },
+  
+  "Badge in Heading": {
+    "prefix": "bs5-badge-heading",
+    "body": [
+      "<h${1:1}>${2:Example heading} <span class=\"badge bg-${3|secondary,primary,success,danger,warning,info,light,dark|}\">${4:New}</span></h${1:1}>"
+    ],
+    "description": "Badge inside heading element"
+  },
+  
+  "Badge on Button": {
+    "prefix": "bs5-badge-btn",
+    "body": [
+      "<button type=\"button\" class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark|} position-relative\">",
+      "  ${2:Inbox}",
+      "  <span class=\"position-absolute top-0 start-100 translate-middle badge rounded-pill bg-${3|danger,primary,secondary,success,warning,info,light,dark|}\">",
+      "    ${4:99+}",
+      "    <span class=\"visually-hidden\">${5:unread messages}</span>",
+      "  </span>",
+      "</button>"
+    ],
+    "description": "Badge positioned on button"
+  },
+  
+  "Badge Notification": {
+    "prefix": "bs5-badge-notification",
+    "body": [
+      "<button type=\"button\" class=\"btn btn-${1|primary,secondary,outline-primary|} position-relative\">",
+      "  ${2:Profile}",
+      "  <span class=\"position-absolute top-0 start-100 translate-middle p-2 bg-${3|danger,success,warning,info|} border border-light rounded-circle\">",
+      "    <span class=\"visually-hidden\">${4:New alerts}</span>",
+      "  </span>",
+      "</button>"
+    ],
+    "description": "Notification dot badge"
+  },
+  
+  "Badge Link": {
+    "prefix": "bs5-badge-link",
+    "body": [
+      "<a href=\"#\" class=\"badge bg-${1|primary,secondary,success,danger,warning,info,light,dark|} text-decoration-none\">${2:Link badge}</a>"
+    ],
+    "description": "Clickable badge link"
+  },
+  
+  "Badge with Icon": {
+    "prefix": "bs5-badge-icon",
+    "body": [
+      "<span class=\"badge bg-${1|primary,secondary,success,danger,warning,info,light,dark|}\" title=\"${2:Badge title}\">",
+      "  <i class=\"fas fa-${3|star,heart,check,times,plus,minus|} me-1\"></i>${4:Badge text}",
+      "</span>"
+    ],
+    "description": "Badge with FontAwesome icon"
+  },
+  
+  "Badge Counter": {
+    "prefix": "bs5-badge-counter",
+    "body": [
+      "<div class=\"d-flex align-items-center\">",
+      "  <span class=\"me-2\">${1:Items}</span>",
+      "  <span class=\"badge bg-${2|primary,secondary,success,info|} rounded-pill\">${3:42}</span>",
+      "</div>"
+    ],
+    "description": "Badge used as counter"
+  },
+  
+  "Badge Sizes": {
+    "prefix": "bs5-badge-sizes",
+    "body": [
+      "<span class=\"badge bg-${1|primary,secondary,success,danger,warning,info,light,dark|} fs-6\">${2:Large}</span>",
+      "<span class=\"badge bg-${3|primary,secondary,success,danger,warning,info,light,dark|}\">${4:Normal}</span>",
+      "<span class=\"badge bg-${5|primary,secondary,success,danger,warning,info,light,dark|} small\">${6:Small}</span>"
+    ],
+    "description": "Badges with different sizes"
+  },
+  
+  "Badge Group": {
+    "prefix": "bs5-badge-group",
+    "body": [
+      "<div class=\"d-flex flex-wrap gap-1\">",
+      "  <span class=\"badge bg-primary\">${1:Primary}</span>",
+      "  <span class=\"badge bg-secondary\">${2:Secondary}</span>",
+      "  <span class=\"badge bg-success\">${3:Success}</span>",
+      "  <span class=\"badge bg-danger\">${4:Danger}</span>",
+      "  <span class=\"badge bg-warning text-dark\">${5:Warning}</span>",
+      "  <span class=\"badge bg-info\">${6:Info}</span>",
+      "  <span class=\"badge bg-light text-dark\">${7:Light}</span>",
+      "  <span class=\"badge bg-dark\">${8:Dark}</span>",
+      "</div>"
+    ],
+    "description": "Group of badges with all colors"
+  }
+}

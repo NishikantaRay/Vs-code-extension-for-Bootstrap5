@@ -1,0 +1,136 @@
+{
+  "Placeholder Text": {
+    "prefix": "bs5-placeholder",
+    "body": [
+      "<p class=\"placeholder-glow\">",
+      "  <span class=\"placeholder col-${1:7}\"></span>",
+      "</p>",
+      "<p class=\"placeholder-wave\">",
+      "  <span class=\"placeholder col-${2:4}\"></span>",
+      "  <span class=\"placeholder col-${3:4}\"></span>",
+      "  <span class=\"placeholder col-${4:6}\"></span>",
+      "</p>"
+    ],
+    "description": "Basic text placeholder with glow and wave animations"
+  },
+  
+  "Placeholder Button": {
+    "prefix": "bs5-placeholder-btn",
+    "body": [
+      "<a href=\"#\" class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark|} disabled placeholder col-${2:6}\" tabindex=\"-1\" aria-disabled=\"true\"></a>"
+    ],
+    "description": "Placeholder button with Bootstrap styling"
+  },
+  
+  "Placeholder Card": {
+    "prefix": "bs5-placeholder-card",
+    "body": [
+      "<div class=\"card\" style=\"width: ${1:18rem};\">",
+      "  <svg class=\"bd-placeholder-img card-img-top\" width=\"100%\" height=\"${2:180}\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"${3:Placeholder}\"><title>${3:Placeholder}</title><rect width=\"100%\" height=\"100%\" fill=\"${4:#868e96}\"/></svg>",
+      "  <div class=\"card-body\">",
+      "    <h5 class=\"card-title placeholder-glow\">",
+      "      <span class=\"placeholder col-6\"></span>",
+      "    </h5>",
+      "    <p class=\"card-text placeholder-glow\">",
+      "      <span class=\"placeholder col-7\"></span>",
+      "      <span class=\"placeholder col-4\"></span>",
+      "      <span class=\"placeholder col-4\"></span>",
+      "      <span class=\"placeholder col-6\"></span>",
+      "      <span class=\"placeholder col-8\"></span>",
+      "    </p>",
+      "    <a href=\"#\" class=\"btn btn-primary disabled placeholder col-6\" tabindex=\"-1\" aria-disabled=\"true\"></a>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Complete placeholder card with image, text, and button placeholders"
+  },
+  
+  "Placeholder Paragraph": {
+    "prefix": "bs5-placeholder-p",
+    "body": [
+      "<p class=\"placeholder-${1|glow,wave|}\">",
+      "  <span class=\"placeholder col-${2:12}\"></span>",
+      "  <span class=\"placeholder col-${3:10}\"></span>",
+      "  <span class=\"placeholder col-${4:8}\"></span>",
+      "  <span class=\"placeholder col-${5:5}\"></span>",
+      "</p>"
+    ],
+    "description": "Paragraph placeholder with customizable animation"
+  },
+  
+  "Placeholder Sizes": {
+    "prefix": "bs5-placeholder-sizes",
+    "body": [
+      "<span class=\"placeholder col-${1:12} placeholder-xs\"></span>",
+      "<span class=\"placeholder col-${2:12} placeholder-sm\"></span>",
+      "<span class=\"placeholder col-${3:12}\"></span>",
+      "<span class=\"placeholder col-${4:12} placeholder-lg\"></span>"
+    ],
+    "description": "Placeholder with different sizes (xs, sm, default, lg)"
+  },
+  
+  "Placeholder Colors": {
+    "prefix": "bs5-placeholder-colors",
+    "body": [
+      "<span class=\"placeholder col-${1:12}\"></span>",
+      "<span class=\"placeholder col-${2:12} bg-primary\"></span>",
+      "<span class=\"placeholder col-${3:12} bg-secondary\"></span>",
+      "<span class=\"placeholder col-${4:12} bg-success\"></span>",
+      "<span class=\"placeholder col-${5:12} bg-danger\"></span>",
+      "<span class=\"placeholder col-${6:12} bg-warning\"></span>",
+      "<span class=\"placeholder col-${7:12} bg-info\"></span>",
+      "<span class=\"placeholder col-${8:12} bg-light\"></span>",
+      "<span class=\"placeholder col-${9:12} bg-dark\"></span>"
+    ],
+    "description": "Placeholder with different Bootstrap colors"
+  },
+  
+  "Placeholder List": {
+    "prefix": "bs5-placeholder-list",
+    "body": [
+      "<ul class=\"list-group\">",
+      "  <li class=\"list-group-item placeholder-glow\">",
+      "    <span class=\"placeholder col-6\"></span>",
+      "  </li>",
+      "  <li class=\"list-group-item placeholder-glow\">",
+      "    <span class=\"placeholder col-5\"></span>",
+      "  </li>",
+      "  <li class=\"list-group-item placeholder-glow\">",
+      "    <span class=\"placeholder col-8\"></span>",
+      "  </li>",
+      "  <li class=\"list-group-item placeholder-glow\">",
+      "    <span class=\"placeholder col-4\"></span>",
+      "  </li>",
+      "</ul>"
+    ],
+    "description": "List group with placeholder items"
+  },
+  
+  "Placeholder Table": {
+    "prefix": "bs5-placeholder-table",
+    "body": [
+      "<table class=\"table\">",
+      "  <thead>",
+      "    <tr>",
+      "      <th scope=\"col\" class=\"placeholder-glow\"><span class=\"placeholder col-${1:6}\"></span></th>",
+      "      <th scope=\"col\" class=\"placeholder-glow\"><span class=\"placeholder col-${2:4}\"></span></th>",
+      "      <th scope=\"col\" class=\"placeholder-glow\"><span class=\"placeholder col-${3:5}\"></span></th>",
+      "    </tr>",
+      "  </thead>",
+      "  <tbody>",
+      "    <tr>",
+      "      <td class=\"placeholder-glow\"><span class=\"placeholder col-${4:8}\"></span></td>",
+      "      <td class=\"placeholder-glow\"><span class=\"placeholder col-${5:6}\"></span></td>",
+      "      <td class=\"placeholder-glow\"><span class=\"placeholder col-${6:7}\"></span></td>",
+      "    </tr>",
+      "    <tr>",
+      "      <td class=\"placeholder-glow\"><span class=\"placeholder col-${7:5}\"></span></td>",
+      "      <td class=\"placeholder-glow\"><span class=\"placeholder col-${8:9}\"></span></td>",
+      "      <td class=\"placeholder-glow\"><span class=\"placeholder col-${9:4}\"></span></td>",
+      "    </tr>",
+      "  </tbody>",
+      "</table>"
+    ],
+    "description": "Table with placeholder content for loading states"
+  }
+}
